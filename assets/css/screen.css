@@ -1,0 +1,350 @@
+body{
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	background:#CA995B;
+}
+
+
+h1{
+	margin-bottom:10px;
+	color:#888;
+	font-size:2.4em;
+	text-shadow:1px 2px 1px #bbb;
+}
+
+
+#wrapper{
+	margin:20px auto;
+	padding:20px;
+	width:90%;
+	min-width:350px;
+	background:#EDD8AC;
+	border:1px solid #aaa;
+	border-radius:12px;
+	box-shadow:5px 5px 10px #ac7c40;
+}
+
+
+
+form label{
+	display:block;
+	padding:5px 7px;
+	color:#fff;
+	border:1px solid #85B23F;
+	border-bottom-color:#fafafa;
+
+	background:#87BE3F;
+	background:-moz-linear-gradient(center top, #85B23F 0, #88C540 100%);
+	background:-webkit-gradient(linear, center top, center bottom, color-stop(0%,#85B23F), color-stop(100%,#88C540));
+	background:-webkit-gradient(bottom, #85B23F 0%, #88C540 100%);
+	background:-o-linear-gradient(bottom, #85B23F 0%, #88C540 100%);
+	background:linear-gradient(center top, #85B23F 0%, #88C540 100%);
+}
+form label[for=cFormcaptcha]{
+	width:auto;
+}
+
+form label.cFormsurround{
+	display:inline-block;
+	color:#666;
+	border:none;
+	background:none;
+}
+form label.cFormsurround input{
+	margin-left:5px;
+}
+
+form .cFormcaptchaImage{
+	margin:5px 5px 0;
+}
+
+
+form input[type=text],
+form input[type=password],
+form input[type=email],
+form input[type=file],
+textarea,
+select{
+	margin:5px;
+	padding:5px;
+	width:220px;
+	height:15px;
+	color:#666;
+	font-size:1em;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:15px;
+	border:1px solid #aaa;
+
+	background:#F6F6F6;
+	background:-moz-linear-gradient(center top , #bbb 0%, #eee 5px, #fff 100%);
+	background:linear-gradient(center top , #006FB9 0%, #48C4C8 100%);
+}
+form input[type=text]:focus,
+form input[type=password]:focus,
+form input[type=email]:focus,
+form input[type=file]:focus,
+textarea:focus,
+select:focus{
+	color:#444;
+	border-color:#888;
+}
+
+form input[type=file]{
+	display:inline-block;
+	width:auto;
+	min-width:220px;
+	height:25px;
+	background:#F6F6F6;
+}
+
+form select option{background:#fff;}
+
+textarea{
+	min-width:220px;
+	max-width:525px;
+	height:135px;
+	min-height:15px;
+	max-height:190px;
+}
+select{height:auto;}
+
+form input[type=submit],
+form input[type=button],
+form input[type=reset]{
+	margin-left:5px;
+	padding:5px 10px;
+	border-radius:6px;
+
+	background:#CDCDCD;
+	background:-moz-linear-gradient(center top , #DBDBDB 0%, #CDCDCD 100%);
+	background:linear-gradient(center top , #DBDBDB 0%, #CDCDCD 100%);
+	border:1px solid #bbb;
+	cursor:pointer;
+}
+form input[type=submit]:hover,
+form input[type=button]:hover,
+form input[type=reset]:hover,
+form input[type=submit]:focus,
+form input[type=button]:focus,
+form input[type=reset]:focus{
+	background:#DBDBDB;
+	background:-moz-linear-gradient(center top , #E3E3E3 0%, #D2D2D2 100%);
+	background:linear-gradient(center top , #E3E3E3 0%, #D2D2D2 100%);
+}
+
+form input[type=submit]:disabled,
+form input[type=button]:disabled,
+form input[type=reset]:disabled{
+	color:#bdaca5;
+	cursor:default;
+}
+
+
+form #recaptcha_widget_div{
+	margin:5px;
+}
+
+
+form .fieldBlock{
+	margin:10px 0;
+	border:1px solid #aaa;
+}
+
+form .fieldBlock .row{
+	padding:6px 8px;
+	background:#f5eeee;
+}
+
+form input.error,
+form select.error,
+form textarea.error{
+	border-color:#f00;
+	-moz-box-shadow:0 0 2px #f00;
+	webkit-box-shadow:0 0 2px #f00;
+	box-shadow:0 0 2px #f00;
+}
+
+
+/** Upload Progress **/
+form .fileData{
+	display:inline;
+	font-size:0.9em;
+}
+
+form .fileData li{
+	display:inline;
+	margin-right:8px;
+}
+
+
+form .fileList{
+	display:block;
+}
+form .fileList > ul{
+	display:inline-block;
+	margin:5px 5px 10px;
+	padding:5px 10px;
+	font-size:0.9em;
+	background:#F6F6F6;
+	border:1px solid #aaa;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+
+form .uploadProgress{
+	margin:5px 5px 10px;
+	padding:5px;
+	width:220px;
+	font-size:0.9em;
+	background:#F6F6F6;
+	border:1px solid #aaa;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+
+form .uploadProgress .barHolder{
+	display:block;
+	margin-top:3px;
+	width:100%;
+	height:15px;
+	border:1px solid #aaa;
+}
+
+form .uploadProgress .progressBar{
+	display:block;
+	width:0;
+	height:100%;
+
+	background:#87BE3F;
+	background:-moz-linear-gradient(center top, #85B23F 0, #88C540 100%);
+	background:-webkit-gradient(linear, center top, center bottom, color-stop(0%,#85B23F), color-stop(100%,#88C540));
+	background:-webkit-gradient(bottom, #85B23F 0%, #88C540 100%);
+	background:-o-linear-gradient(bottom, #85B23F 0%, #88C540 100%);
+	background:linear-gradient(center top, #85B23F 0%, #88C540 100%);
+}
+
+/** form file uploads **/
+form .fileList li{
+	margin:4px 0;
+}
+
+form .fileList li.error{
+	color:#f00;
+}
+
+form .fileList li .errorInfo{
+	display:block;
+	margin-bottom:8px;
+	padding-left:20px;
+}
+
+form .fileList li .errorInfo li{
+	margin:0 0 0 2px;
+}
+
+
+form .fileList li .fileInfo{
+	padding-left:20px;
+	height:16px;
+	line-height:16px;
+	background:url('../images/icn-file-types.png') 0 0 no-repeat;
+}
+
+form .fileList li.text .fileInfo{
+	background-position:0 -16px;
+}
+
+form .fileList li.image .fileInfo{
+	background-position:0 -32px;
+}
+
+form .fileList li.application .fileInfo{
+	background-position:0 -48px;
+}
+
+form .fileList li.zip .fileInfo,
+form .fileList li.x-rar .fileInfo,
+form .fileList li.x-gzip .fileInfo{
+	background-position:0 -64px;
+}
+
+form .fileList li.x-java-archive .fileInfo{
+	background-position:0 -80px;
+}
+
+form .fileList li.pdf .fileInfo{
+	background-position:0 -96px;
+}
+
+form .fileList li.audio .fileInfo{
+	background-position:0 -112px;
+}
+
+form .fileList li.video .fileInfo{
+	background-position:0 -128px;
+}
+
+form .fileList li.xml .fileInfo,
+form .fileList li.json .fileInfo,
+form .fileList li.css .fileInfo,
+form .fileList li.javascript .fileInfo,
+form .fileList li.x-php .fileInfo{
+	background-position:0 -144px;
+}
+
+form .fileList li.html .fileInfo{
+	background-position:0 -160px;
+}
+
+form .fileList li.x-cd-image .fileInfo,
+form .fileList li.x-apple-diskimage .fileInfo{
+	background-position:0 -176px;
+}
+
+form .fileList li.x-desktop .fileInfo{
+	background-position:0 -192px;
+}
+
+form .fileList li.x-msdos-program .fileInfo,
+form .fileList li.x-ms-dos-executable .fileInfo,
+form .fileList li.x-shellscript .fileInfo{
+	background-position:0 -208px;
+}
+
+form .fileList li.x-font-ttf .fileInfo,
+form .fileList li.x-font-otf .fileInfo{
+	background-position:0 -224px;
+}
+
+form .fileList li.vnd-ms-excel .fileInfo,
+form .fileList li.vnd-oasis-opendocument-spreadsheet .fileInfo{
+	background-position:0 -240px;
+}
+
+form .fileList li.rtf .fileInfo,
+form .fileList li.vnd-oasis-opendocument-text .fileInfo,
+form .fileList li.msword .fileInfo,
+form .fileList li.vnd-openxmlformats-officedocument-wordprocessingml-document .fileInfo,
+form .fileList li.vnd-ms-works .fileInfo{
+	background-position:0 -256px;
+}
+
+form .fileList li.x-sql .fileInfo{
+	background-position:0 -272px;
+}
+
+form .fileList li.vnd-oasis-opendocument-presentation .fileInfo,
+form .fileList li.vnd-ms-powerpoint .fileInfo,
+form .fileList li.vnd-openxmlformats-officedocument-presentationml-presentation .fileInfo{
+	background-position:0 -288px;
+}
+
+form .fileList li.x-python .fileInfo{
+	background-position:0 -304px;
+}
+
+form .fileList li.x-deb .fileInfo{
+	background-position:0 -320px;
+}

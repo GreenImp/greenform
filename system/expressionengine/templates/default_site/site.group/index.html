@@ -1,0 +1,15 @@
+{exp:channel:entries channel="pages" limit="1"}
+	{if no_results}
+		{redirect="404"}
+	{/if}
+	{embed="global/header"
+		seo_title="{page_seo_title}"
+		seo_keywords="{page_seo_keywords}"
+		seo_description="{page_seo_description}"
+
+		page_title="{title}"
+		page_heading="{page_heading}"
+	}
+{/exp:channel:entries}
+<a href="{site_url}contact">contact</a>
+{embed="global/footer"}

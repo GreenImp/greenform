@@ -1,0 +1,435 @@
+#mainContent .pageContents{overflow:visible;}
+
+
+.btnOptions{
+	margin-bottom:10px;
+	min-height:25px;
+	text-align:right;
+}
+
+.btnOptions .button.rightNav{
+	float:right;
+	padding:0;
+}
+
+
+.mainTable{clear:both;}
+.mainTable{clear:both;}
+
+
+.mainTable .passwordBox{
+	display:inline-block;
+	padding:0 2px;
+	min-height:13px;
+	font-size:0;
+	font-weight:bold;
+	line-height:normal;
+	background:#A9B7C1;
+	cursor:pointer;
+}
+.mainTable .passwordBox:hover{
+	font-size:13px;
+}
+
+.mainTable .flagRead label{display:none;}
+
+.mainTable tr.read td,
+.mainTable td.read{
+	opacity:0.5;
+}
+
+
+#ruleTable{
+	background:#D6EAF1;
+}
+
+#ruleTable tbody tr.ui-sortable-helper{
+	box-shadow:0 0 5px #313E46;
+}
+
+#ruleTable tbody .surround{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+#ruleTable tbody td .sort{
+	position:absolute;
+	left:-18px;
+	top:50%;
+	display:block;
+	margin-top:-20px;
+	width:8px;
+	height:30px;
+	text-indent:-9999em;
+	background:url('../images/icn-move-row.png') 2px center no-repeat #EBF0F2;
+	border:1px solid #D0D7DF;
+	border-right:none;
+	-moz-border-radius:6px 0 0 6px;
+	-webkit-border-radius:6px 0 0 6px;
+	border-radius:6px 0 0 6px;
+	overflow:hidden;
+	cursor:pointer;
+}
+#ruleTable tr.odd td .sort{
+	background-color:#F4F6F6;
+}
+#ruleTable tr.even td .sort{
+	background-color:#EBF0F2;
+}
+
+
+#validationForm h3{margin-top:20px;}
+
+#validationForm .mainTable .instruction_text{
+	padding-left:5px;
+}
+
+#validationForm label{
+	display:block;
+	margin:5px 0 0 0;
+}
+
+#validationForm td > label:first-child,
+#validationForm .surround > label:first-child{
+	margin:0;
+}
+
+
+#validationForm textarea,
+#validationForm textarea.markItUpEditor,
+#validationForm input[type='text'],
+#validationForm input[type='email'],
+#validationForm input[type='url'],
+#validationForm input[type='number'],
+#validationForm input[type='password']{
+	width:auto;
+}
+
+#validationForm input.submit{
+	float:right;
+}
+
+#validationForm .addRuleBtn.submit{
+	float:left;
+}
+
+
+#validationForm .typeBlock{
+	margin-top:5px;
+}
+#validationForm .typeBlock input{
+	width:70px;
+}
+
+#validationForm .typeBlock.show-file label{
+	margin-top:10px;
+	color:#E7174B;
+	cursor:pointer;
+	font-size:13px;
+	font-weight:bold;
+	line-height:normal;
+}
+#validationForm .typeBlock.show-file label:hover{
+	text-decoration:underline;
+}
+
+#validationForm .typeBlock .multiplePop{
+	margin-top:10px;
+	font-size:13px;
+	font-weight:bold;
+	line-height:normal;
+}
+
+#validationForm .editLink{
+	display:inline-block;
+	padding-right:18px;
+	min-height:16px;
+	background:url("../images/icn-dialog.png") right center no-repeat;
+}
+
+#validationForm .otherRules{
+	margin-top:8px;
+}
+
+
+#validationForm .delete,
+#validationForm .delete td{
+	background:#D0D9E1;
+	border-color:#F4F6F6;
+}
+
+#validationForm .delete textarea,
+#validationForm .delete textarea.markItUpEditor,
+#validationForm .delete input[type='text'],
+#validationForm .delete input[type='email'],
+#validationForm .delete input[type='url'],
+#validationForm .delete input[type='number'],
+#validationForm .delete input[type='password']{
+	background:#EBF0F2;
+}
+
+
+#validationForm textarea.active,
+#validationForm textarea.markItUpEditor.active,
+#validationForm input[type='text'].active,
+#validationForm input[type='email'].active,
+#validationForm input[type='url'].active,
+#validationForm input[type='number'].active,
+#validationForm input[type='password'].active{
+	background-color:#fffff5;
+	border-width:1px;
+	border-style:dashed;
+}
+
+
+#validationForm textarea.error,
+#validationForm textarea.markItUpEditor.error,
+#validationForm input[type='text'].error,
+#validationForm input[type='email'].error,
+#validationForm input[type='url'].error,
+#validationForm input[type='number'].error,
+#validationForm input[type='password'].error{
+	color:#fff;
+	background:#EF5F91;
+	border-style:solid;
+}
+
+
+/** multi-option fields **/
+#multiPop .btnOptions{margin:0;}
+#multiPop .btnOptions button{cursor:pointer;}
+
+#multiPop .optionsBox{
+	margin:10px 5px 15px;
+	padding:0 2px;
+	min-width:220px;
+	border:1px solid #ccc;
+	background:#f6f6f6;
+}
+
+#multiPop .optionsBox.select{
+	padding:20px 0 0 0;
+
+	/*background:url('../images/icn-multifield.png') right 0 no-repeat #eaeaea;*/
+	background:url('../images/icn-multifield.png') right 0 no-repeat,
+				-moz-linear-gradient(top,  #ffffff 0%, #eaeaea 2px, #d6d6d6 20px); /* FF3.6+ */
+	background:url('../images/icn-multifield.png') right 0 no-repeat,
+				-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(2px,#eaeaea), color-stop(20px,#d6d6d6)); /* Chrome,Safari4+ */
+	background:url('../images/icn-multifield.png') right 0 no-repeat,
+				-webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 2px,#d6d6d6 20px); /* Chrome10+,Safari5.1+ */
+	background:url('../images/icn-multifield.png') right 0 no-repeat,
+				-o-linear-gradient(top,  #ffffff 0%,#eaeaea 2px,#d6d6d6 20px); /* Opera 11.10+ */
+	background:url('../images/icn-multifield.png') right 0 no-repeat,
+				-ms-linear-gradient(top,  #ffffff 0%,#eaeaea 2px,#d6d6d6 20px); /* IE10+ */
+	background:url('../images/icn-multifield.png') right 0 no-repeat,
+				linear-gradient(top,  #ffffff 0%,#eaeaea 2px,#d6d6d6 20px); /* W3C */
+
+	border:1px solid #ccc;
+	-moz-border-radius:4px 4px 0 0;
+	-webkit-border-radius:4px 4px 0 0;
+	border-radius:4px 4px 0 0;
+}
+
+#multiPop .optionsBox li{
+	position:relative;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+}
+#multiPop .optionsBox li:hover{
+	background-color:#F0E7D4 !important;
+}
+
+#multiPop .optionsBox.checkbox li,
+#multiPop .optionsBox.radio li{
+	padding-left:15px;
+	background-image:url('../images/icn-multifield.png');
+	background-position:0 -20px;
+	background-repeat:no-repeat;
+}
+#multiPop .optionsBox.radio li{
+	background-position:0 -40px;
+}
+
+#multiPop .optionsBox.select li{
+	padding:0 2px;
+	background:#f8f8f8;
+	-moz-box-shadow:2px 3px 2px #ccc;
+	-webkit-box-shadow:2px 3px 2px #ccc;
+	box-shadow:2px 3px 2px #ccc;
+}
+#multiPop .optionsBox.select li:first-child{
+	border-top:1px solid #ccc;
+}
+
+#multiPop .optionsBox input{
+	display:block;
+	margin:0;
+	padding:0 2px;
+	width:200px;
+	height:18px;
+	line-height:18px;
+	border:1px solid transparent;
+	background:transparent;
+}
+#multiPop .optionsBox input.value{
+	color:#666;
+	border-style:dashed;
+}
+
+#multiPop .optionsBox li.active input,
+#multiPop .optionsBox li:hover input{
+	display:inline-block;
+	margin-left:10px;
+	width:91px;
+}
+#multiPop .optionsBox li.active input:first-child,
+#multiPop .optionsBox li:hover input:first-child{
+	margin-left:0;
+}
+
+#multiPop .optionsBox li:hover input{
+	border-color:#E5DCC9;
+	background:#F8EDD7;
+}
+#multiPop .optionsBox li.active input{
+	border-color:#ccc;
+	background:#fff;
+}
+
+#multiPop .optionsBox .delete{
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+	width:16px;
+	height:20px;
+	text-indent:-9999em;
+	background:url('../images/icn-delete.png') 0 center no-repeat;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+#multiPop .optionsBox li:hover .delete{display:block;}
+
+
+/** file mime types **/
+#acceptPop .listBlock{
+	margin:20px 0 0;
+	width:50%;
+	min-width:150px;
+	max-width:165px;
+}
+
+#acceptPop .listBlock.custom{
+	position:relative;
+	float:right;
+}
+
+#acceptPop .listBlock h2{
+	font-size:16px;
+}
+
+#acceptPop .listBlock.custom input.customExt{
+	margin:5px 0;
+	text-align:center;
+}
+
+#acceptPop .listBlock.custom ul.resultBox{
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	margin:0;
+	max-height:120px;
+	background:#fefefe;
+	border:2px solid #ccc;
+	border-top:1px solid #ccc;
+	box-shadow:2px 2px 2px #666;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+#acceptPop .listBlock.custom ul.resultBox li{
+	padding:2px 4px;
+}
+#acceptPop .listBlock.custom ul.resultBox li:first-child{
+	padding-top:4px;
+}
+
+#acceptPop .listBlock.custom ul.resultBox li:hover{
+	background:#F0E7D4;
+}
+#acceptPop .listBlock.custom ul.resultBox li.selected{
+	background:#F5DBA5;
+}
+
+#acceptPop .listBlock.custom ul.resultBox li input{display:none;}
+
+#acceptPop .listBlock.custom ul.resultBox li label{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+#acceptPop .listBlock.custom .resultCloseBtn{
+	position:absolute;
+	top:-9999em;
+	left:-9999em;
+	display:block;
+	width:16px;
+	height:20px;
+	text-indent:-9999em;
+	background:url('../images/icn-delete.png') right bottom no-repeat;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+#acceptPop .listBlock.custom ul.list li{
+	float:left;
+	width:50%;
+}
+
+#acceptPop .btnOptions{
+	clear:right;
+	margin:0;
+	padding-top:10px;
+}
+
+#acceptPop .btnOptions button{
+	cursor:pointer;
+}
+
+
+/** dataTables **/
+.dataTables_wrapper table.dataTable{margin-bottom:0 !important;}
+
+.dataTables_wrapper .fg-toolbar{
+	padding:5px;
+}
+
+.dataTables_wrapper .dataTables_length{
+	float:left;
+}
+
+.dataTables_wrapper .dataTables_filter{
+	float:right;
+}
+
+.dataTables_wrapper .dataTables_filter input{
+	width:250px;
+}
+
+.dataTables_wrapper table.dataTable .DataTables_sort_icon{
+	float:left;
+}
+
+.dataTables_wrapper .dataTables_paginate{
+	margin-top:5px;
+}
+
+.dataTables_wrapper .dataTables_paginate .fg-button{
+	margin:0;
+	padding:2px 5px;
+}

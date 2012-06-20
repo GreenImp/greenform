@@ -1,0 +1,32 @@
+{exp:channel:entries channel="pages" limit="1"}
+	{if no_results}
+		{redirect="404"}
+	{/if}
+	{embed="global/header"
+		seo_title="{page_seo_title}"
+		seo_keywords="{page_seo_keywords}"
+		seo_description="{page_seo_description}"
+
+		page_title="{title}"
+		page_heading="{page_heading}"
+	}
+{/exp:channel:entries}
+
+	{exp:greenform:create_form
+		validation_type="file_upload"
+
+		mail_type="html"
+		subject="GreenImp Enquiry"
+		user_recipients="no"
+
+		recipients="lee@greenimp.co.uk"
+		email_from="info@greenimp.co.uk"
+		email_template="forms/email"
+		use_jquery="yes"
+
+		form_id="contactForm"
+
+		build_form="yes"
+	}
+	
+{embed="global/footer"}

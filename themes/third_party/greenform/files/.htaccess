@@ -1,0 +1,12 @@
+# deny index viewing
+Options -Indexes
+
+# disable CGI scripts
+Options -ExecCGI
+# force all of the below list of file extensions to be run as CGI scripts (which are disabled)
+# this stops them from running
+AddHandler cgi-script .php .php3 .php4 .phtml .pl .py .jsp .asp .htm .xhtml .shtml .sh .cgi
+
+# block direct access to this folder
+order deny,allow
+deny from all

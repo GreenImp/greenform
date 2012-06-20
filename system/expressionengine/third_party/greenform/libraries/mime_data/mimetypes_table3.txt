@@ -1,0 +1,1934 @@
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+<tr align="center">
+<th class="tablerowheader">Extension</th>
+<th class="tablerowheader">MIME type</th>
+</tr>
+<tr class="tablerowlight">
+<td>.3dm</td>
+<td>x-world/x-3dmf</td></tr>
+<tr class="tablerowdark">
+<td>.3dmf</td>
+<td>x-world/x-3dmf</td></tr>
+<tr class="tablerowlight">
+<td>.a</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowdark">
+<td>.aab</td>
+<td>application/x-authorware-bin</td></tr>
+<tr class="tablerowlight">
+<td>.aam</td>
+<td>application/x-authorware-map</td></tr>
+<tr class="tablerowdark">
+<td>.aas</td>
+<td>application/x-authorware-seg</td></tr>
+<tr class="tablerowlight">
+<td>.abc</td>
+<td>text/vnd.abc</td></tr>
+<tr class="tablerowdark">
+<td>.acgi</td>
+<td>text/html</td></tr>
+<tr class="tablerowlight">
+<td>.afl</td>
+<td>video/animaflex</td></tr>
+<tr class="tablerowdark">
+<td>.ai</td>
+<td>application/postscript</td></tr>
+<tr class="tablerowlight">
+<td>.aif</td>
+<td>audio/aiff</td></tr>
+<tr class="tablerowdark">
+<td>.aif</td>
+<td>audio/x-aiff</td></tr>
+<tr class="tablerowlight">
+<td>.aifc</td>
+<td>audio/aiff</td></tr>
+<tr class="tablerowdark">
+<td>.aifc</td>
+<td>audio/x-aiff</td></tr>
+<tr class="tablerowlight">
+<td>.aiff</td>
+<td>audio/aiff</td></tr>
+<tr class="tablerowdark">
+<td>.aiff</td>
+<td>audio/x-aiff</td></tr>
+<tr class="tablerowlight">
+<td>.aim</td>
+<td>application/x-aim</td></tr>
+<tr class="tablerowdark">
+<td>.aip</td>
+<td>text/x-audiosoft-intra</td></tr>
+<tr class="tablerowlight">
+<td>.ani</td>
+<td>application/x-navi-animation</td></tr>
+<tr class="tablerowdark">
+<td>.aos</td>
+<td
+ >application/x-nokia-9000-communicator-add-on-software</td></tr>
+<tr class="tablerowlight">
+<td>.aps</td>
+<td>application/mime</td></tr>
+<tr class="tablerowdark">
+<td>.arc</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowlight">
+<td>.arj</td>
+<td>application/arj</td></tr>
+<tr class="tablerowdark">
+<td>.arj</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowlight">
+<td>.art</td>
+<td>image/x-jg</td></tr>
+<tr class="tablerowdark">
+<td>.asf</td>
+<td>video/x-ms-asf</td></tr>
+<tr class="tablerowlight">
+<td>.asm</td>
+<td>text/x-asm</td></tr>
+<tr class="tablerowdark">
+<td>.asp</td>
+<td>text/asp</td></tr>
+<tr class="tablerowlight">
+<td>.asx</td>
+<td>application/x-mplayer2</td></tr>
+<tr class="tablerowdark">
+<td>.asx</td>
+<td>video/x-ms-asf</td></tr>
+<tr class="tablerowlight">
+<td>.asx</td>
+<td>video/x-ms-asf-plugin</td></tr>
+<tr class="tablerowdark">
+<td>.au</td>
+<td>audio/basic</td></tr>
+<tr class="tablerowlight">
+<td>.au</td>
+<td>audio/x-au</td></tr>
+<tr class="tablerowdark">
+<td>.avi</td>
+<td>application/x-troff-msvideo</td></tr>
+<tr class="tablerowlight">
+<td>.avi</td>
+<td>video/avi</td></tr>
+<tr class="tablerowdark">
+<td>.avi</td>
+<td>video/msvideo</td></tr>
+<tr class="tablerowlight">
+<td>.avi</td>
+<td>video/x-msvideo</td></tr>
+<tr class="tablerowdark">
+<td>.avs</td>
+<td>video/avs-video</td></tr>
+<tr class="tablerowlight">
+<td>.bcpio</td>
+<td>application/x-bcpio</td></tr>
+<tr class="tablerowdark">
+<td>.bin</td>
+<td>application/mac-binary</td></tr>
+<tr class="tablerowlight">
+<td>.bin</td>
+<td>application/macbinary</td></tr>
+<tr class="tablerowdark">
+<td>.bin</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowlight">
+<td>.bin</td>
+<td>application/x-binary</td></tr>
+<tr class="tablerowdark">
+<td>.bin</td>
+<td>application/x-macbinary</td></tr>
+<tr class="tablerowlight">
+<td>.bm</td>
+<td>image/bmp</td></tr>
+<tr class="tablerowdark">
+<td>.bmp</td>
+<td>image/bmp</td></tr>
+<tr class="tablerowlight">
+<td>.bmp</td>
+<td>image/x-windows-bmp</td></tr>
+<tr class="tablerowdark">
+<td>.boo</td>
+<td>application/book</td></tr>
+<tr class="tablerowlight">
+<td>.book</td>
+<td>application/book</td></tr>
+<tr class="tablerowdark">
+<td>.boz</td>
+<td>application/x-bzip2</td></tr>
+<tr class="tablerowlight">
+<td>.bsh</td>
+<td>application/x-bsh</td></tr>
+<tr class="tablerowdark">
+<td>.bz</td>
+<td>application/x-bzip</td></tr>
+<tr class="tablerowlight">
+<td>.bz2</td>
+<td>application/x-bzip2</td></tr>
+<tr class="tablerowdark">
+<td>.c</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.c</td>
+<td>text/x-c</td></tr>
+<tr class="tablerowdark">
+<td>.c++</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.cat</td>
+<td>application/vnd.ms-pki.seccat</td></tr>
+<tr class="tablerowdark">
+<td>.cc</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.cc</td>
+<td>text/x-c</td></tr>
+<tr class="tablerowdark">
+<td>.ccad</td>
+<td>application/clariscad</td></tr>
+<tr class="tablerowlight">
+<td>.cco</td>
+<td>application/x-cocoa</td></tr>
+<tr class="tablerowdark">
+<td>.cdf</td>
+<td>application/cdf</td></tr>
+<tr class="tablerowlight">
+<td>.cdf</td>
+<td>application/x-cdf</td></tr>
+<tr class="tablerowdark">
+<td>.cdf</td>
+<td>application/x-netcdf</td></tr>
+<tr class="tablerowlight">
+<td>.cer</td>
+<td>application/pkix-cert</td></tr>
+<tr class="tablerowdark">
+<td>.cer</td>
+<td>application/x-x509-ca-cert</td></tr>
+<tr class="tablerowlight">
+<td>.cha</td>
+<td>application/x-chat</td></tr>
+<tr class="tablerowdark">
+<td>.chat</td>
+<td>application/x-chat</td></tr>
+<tr class="tablerowlight">
+<td>.class</td>
+<td>application/java</td></tr>
+<tr class="tablerowdark">
+<td>.class</td>
+<td>application/java-byte-code</td></tr>
+<tr class="tablerowlight">
+<td>.class</td>
+<td>application/x-java-class</td></tr>
+<tr class="tablerowdark">
+<td>.com</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowlight">
+<td>.com</td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.conf</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.cpio</td>
+<td>application/x-cpio</td></tr>
+<tr class="tablerowdark">
+<td>.cpp</td>
+<td>text/x-c</td></tr>
+<tr class="tablerowlight">
+<td>.cpt</td>
+<td>application/mac-compactpro</td></tr>
+<tr class="tablerowdark">
+<td>.cpt</td>
+<td>application/x-compactpro</td></tr>
+<tr class="tablerowlight">
+<td>.cpt</td>
+<td>application/x-cpt</td></tr>
+<tr class="tablerowdark">
+<td>.crl</td>
+<td>application/pkcs-crl</td></tr>
+<tr class="tablerowlight">
+<td>.crl</td>
+<td>application/pkix-crl</td></tr>
+<tr class="tablerowdark">
+<td>.crt</td>
+<td>application/pkix-cert</td></tr>
+<tr class="tablerowlight">
+<td>.crt</td>
+<td>application/x-x509-ca-cert</td></tr>
+<tr class="tablerowdark">
+<td>.crt</td>
+<td>application/x-x509-user-cert</td></tr>
+<tr class="tablerowlight">
+<td>.csh</td>
+<td>application/x-csh</td></tr>
+<tr class="tablerowdark">
+<td>.csh</td>
+<td>text/x-script.csh</td></tr>
+<tr class="tablerowlight">
+<td>.css</td>
+<td>application/x-pointplus</td></tr>
+<tr class="tablerowdark">
+<td>.css</td>
+<td>text/css</td></tr>
+<tr class="tablerowlight">
+<td>.cxx</td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.dcr</td>
+<td>application/x-director</td></tr>
+<tr class="tablerowlight">
+<td>.deepv</td>
+<td>application/x-deepv</td></tr>
+<tr class="tablerowdark">
+<td>.def</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.der</td>
+<td>application/x-x509-ca-cert</td></tr>
+<tr class="tablerowdark">
+<td>.dif</td>
+<td>video/x-dv</td></tr>
+<tr class="tablerowlight">
+<td>.dir</td>
+<td>application/x-director</td></tr>
+<tr class="tablerowdark">
+<td>.dl</td>
+<td>video/dl</td></tr>
+<tr class="tablerowlight">
+<td>.dl</td>
+<td>video/x-dl</td></tr>
+<tr class="tablerowdark">
+<td>.doc</td>
+<td>application/msword</td></tr>
+<tr class="tablerowlight">
+<td>.dot</td>
+<td>application/msword</td></tr>
+<tr class="tablerowdark">
+<td>.dp</td>
+<td>application/commonground</td></tr>
+<tr class="tablerowlight">
+<td>.drw</td>
+<td>application/drafting</td></tr>
+<tr class="tablerowdark">
+<td>.dump</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowlight">
+<td>.dv</td>
+<td>video/x-dv</td></tr>
+<tr class="tablerowdark">
+<td>.dvi</td>
+<td>application/x-dvi</td></tr>
+<tr class="tablerowlight">
+<td>.dwf</td>
+<td>drawing/x-dwf (old)</td></tr>
+<tr class="tablerowdark">
+<td>.dwf</td>
+<td>model/vnd.dwf</td></tr>
+<tr class="tablerowlight">
+<td>.dwg</td>
+<td>application/acad</td></tr>
+<tr class="tablerowdark">
+<td>.dwg</td>
+<td>image/vnd.dwg</td></tr>
+<tr class="tablerowlight">
+<td>.dwg</td>
+<td>image/x-dwg</td></tr>
+<tr class="tablerowdark">
+<td>.dxf</td>
+<td>application/dxf</td></tr>
+<tr class="tablerowlight">
+<td>.dxf</td>
+<td>image/vnd.dwg</td></tr>
+<tr class="tablerowdark">
+<td>.dxf</td>
+<td>image/x-dwg</td></tr>
+<tr class="tablerowlight">
+<td>.dxr</td>
+<td>application/x-director</td></tr>
+<tr class="tablerowdark">
+<td>.el</td>
+<td>text/x-script.elisp</td></tr>
+<tr class="tablerowlight">
+<td>.elc</td>
+<td>application/x-bytecode.elisp (compiled
+elisp)</td></tr>
+<tr class="tablerowdark">
+<td>.elc</td>
+<td>application/x-elc</td></tr>
+<tr class="tablerowlight">
+<td>.env</td>
+<td>application/x-envoy</td></tr>
+<tr class="tablerowdark">
+<td>.eps</td>
+<td>application/postscript</td></tr>
+<tr class="tablerowlight">
+<td>.es</td>
+<td>application/x-esrehber</td></tr>
+<tr class="tablerowdark">
+<td>.etx</td>
+<td>text/x-setext</td></tr>
+<tr class="tablerowlight">
+<td>.evy</td>
+<td>application/envoy</td></tr>
+<tr class="tablerowdark">
+<td>.evy</td>
+<td>application/x-envoy</td></tr>
+<tr class="tablerowlight">
+<td>.exe</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowdark">
+<td>.f</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.f</td>
+<td>text/x-fortran</td></tr>
+<tr class="tablerowdark">
+<td>.f77</td>
+<td>text/x-fortran</td></tr>
+<tr class="tablerowlight">
+<td>.f90</td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.f90</td>
+<td>text/x-fortran</td></tr>
+<tr class="tablerowlight">
+<td>.fdf</td>
+<td>application/vnd.fdf</td></tr>
+<tr class="tablerowdark">
+<td>.fif</td>
+<td>application/fractals</td></tr>
+<tr class="tablerowlight">
+<td>.fif</td>
+<td>image/fif</td></tr>
+<tr class="tablerowdark">
+<td>.fli</td>
+<td>video/fli</td></tr>
+<tr class="tablerowlight">
+<td>.fli</td>
+<td>video/x-fli</td></tr>
+<tr class="tablerowdark">
+<td>.flo</td>
+<td>image/florian</td></tr>
+<tr class="tablerowlight">
+<td>.flx</td>
+<td>text/vnd.fmi.flexstor</td></tr>
+<tr class="tablerowdark">
+<td>.fmf</td>
+<td>video/x-atomic3d-feature</td></tr>
+<tr class="tablerowlight">
+<td>.for</td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.for</td>
+<td>text/x-fortran</td></tr>
+<tr class="tablerowlight">
+<td>.fpx</td>
+<td>image/vnd.fpx</td></tr>
+<tr class="tablerowdark">
+<td>.fpx</td>
+<td>image/vnd.net-fpx</td></tr>
+<tr class="tablerowlight">
+<td>.frl</td>
+<td>application/freeloader</td></tr>
+<tr class="tablerowdark">
+<td>.funk</td>
+<td>audio/make</td></tr>
+<tr class="tablerowlight">
+<td>.g</td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.g3</td>
+<td>image/g3fax</td></tr>
+<tr class="tablerowlight">
+<td>.gif</td>
+<td>image/gif</td></tr>
+<tr class="tablerowdark">
+<td>.gl</td>
+<td>video/gl</td></tr>
+<tr class="tablerowlight">
+<td>.gl</td>
+<td>video/x-gl</td></tr>
+<tr class="tablerowdark">
+<td>.gsd</td>
+<td>audio/x-gsm</td></tr>
+<tr class="tablerowlight">
+<td>.gsm</td>
+<td>audio/x-gsm</td></tr>
+<tr class="tablerowdark">
+<td>.gsp</td>
+<td>application/x-gsp</td></tr>
+<tr class="tablerowlight">
+<td>.gss</td>
+<td>application/x-gss</td></tr>
+<tr class="tablerowdark">
+<td>.gtar</td>
+<td>application/x-gtar</td></tr>
+<tr class="tablerowlight">
+<td>.gz</td>
+<td>application/x-compressed</td></tr>
+<tr class="tablerowdark">
+<td>.gz</td>
+<td>application/x-gzip</td></tr>
+<tr class="tablerowlight">
+<td>.gzip</td>
+<td>application/x-gzip</td></tr>
+<tr class="tablerowdark">
+<td>.gzip</td>
+<td>multipart/x-gzip</td></tr>
+<tr class="tablerowlight">
+<td>.h</td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.h</td>
+<td>text/x-h</td></tr>
+<tr class="tablerowlight">
+<td>.hdf</td>
+<td>application/x-hdf</td></tr>
+<tr class="tablerowdark">
+<td>.help</td>
+<td>application/x-helpfile</td></tr>
+<tr class="tablerowlight">
+<td>.hgl</td>
+<td>application/vnd.hp-hpgl</td></tr>
+<tr class="tablerowdark">
+<td>.hh</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.hh</td>
+<td>text/x-h</td></tr>
+<tr class="tablerowdark">
+<td>.hlb</td>
+<td>text/x-script</td></tr>
+<tr class="tablerowlight">
+<td>.hlp</td>
+<td>application/hlp</td></tr>
+<tr class="tablerowdark">
+<td>.hlp</td>
+<td>application/x-helpfile</td></tr>
+<tr class="tablerowlight">
+<td>.hlp</td>
+<td>application/x-winhelp</td></tr>
+<tr class="tablerowdark">
+<td>.hpg</td>
+<td>application/vnd.hp-hpgl</td></tr>
+<tr class="tablerowlight">
+<td>.hpgl</td>
+<td>application/vnd.hp-hpgl</td></tr>
+<tr class="tablerowdark">
+<td>.hqx</td>
+<td>application/binhex</td></tr>
+<tr class="tablerowlight">
+<td>.hqx</td>
+<td>application/binhex4</td></tr>
+<tr class="tablerowdark">
+<td>.hqx</td>
+<td>application/mac-binhex</td></tr>
+<tr class="tablerowlight">
+<td>.hqx</td>
+<td>application/mac-binhex40</td></tr>
+<tr class="tablerowdark">
+<td>.hqx</td>
+<td>application/x-binhex40</td></tr>
+<tr class="tablerowlight">
+<td>.hqx</td>
+<td>application/x-mac-binhex40</td></tr>
+<tr class="tablerowdark">
+<td>.hta</td>
+<td>application/hta</td></tr>
+<tr class="tablerowlight">
+<td>.htc</td>
+<td>text/x-component</td></tr>
+<tr class="tablerowdark">
+<td>.htm</td>
+<td>text/html</td></tr>
+<tr class="tablerowlight">
+<td>.html</td>
+<td>text/html</td></tr>
+<tr class="tablerowdark">
+<td>.htmls</td>
+<td>text/html</td></tr>
+<tr class="tablerowlight">
+<td>.htt</td>
+<td>text/webviewhtml</td></tr>
+<tr class="tablerowdark">
+<td>.htx </td>
+<td>text/html</td></tr>
+<tr class="tablerowlight">
+<td>.ice </td>
+<td>x-conference/x-cooltalk</td></tr>
+<tr class="tablerowdark">
+<td>.ico</td>
+<td>image/x-icon</td></tr>
+<tr class="tablerowlight">
+<td>.idc</td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.ief</td>
+<td>image/ief</td></tr>
+<tr class="tablerowlight">
+<td>.iefs</td>
+<td>image/ief</td></tr>
+<tr class="tablerowdark">
+<td>.iges</td>
+<td>application/iges</td></tr>
+<tr class="tablerowlight">
+<td>.iges </td>
+<td>model/iges</td></tr>
+<tr class="tablerowdark">
+<td>.igs</td>
+<td>application/iges</td></tr>
+<tr class="tablerowlight">
+<td>.igs</td>
+<td>model/iges</td></tr>
+<tr class="tablerowdark">
+<td>.ima</td>
+<td>application/x-ima</td></tr>
+<tr class="tablerowlight">
+<td>.imap</td>
+<td>application/x-httpd-imap</td></tr>
+<tr class="tablerowdark">
+<td>.inf </td>
+<td>application/inf</td></tr>
+<tr class="tablerowlight">
+<td>.ins</td>
+<td>application/x-internett-signup</td></tr>
+<tr class="tablerowdark">
+<td>.ip </td>
+<td>application/x-ip2</td></tr>
+<tr class="tablerowlight">
+<td>.isu</td>
+<td>video/x-isvideo</td></tr>
+<tr class="tablerowdark">
+<td>.it</td>
+<td>audio/it</td></tr>
+<tr class="tablerowlight">
+<td>.iv</td>
+<td>application/x-inventor</td></tr>
+<tr class="tablerowdark">
+<td>.ivr</td>
+<td>i-world/i-vrml</td></tr>
+<tr class="tablerowlight">
+<td>.ivy</td>
+<td>application/x-livescreen</td></tr>
+<tr class="tablerowdark">
+<td>.jam </td>
+<td>audio/x-jam</td></tr>
+<tr class="tablerowlight">
+<td>.jav</td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.jav</td>
+<td>text/x-java-source</td></tr>
+<tr class="tablerowlight">
+<td>.java</td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.java </td>
+<td>text/x-java-source</td></tr>
+<tr class="tablerowlight">
+<td>.jcm </td>
+<td>application/x-java-commerce</td></tr>
+<tr class="tablerowdark">
+<td>.jfif</td>
+<td>image/jpeg</td></tr>
+<tr class="tablerowlight">
+<td>.jfif</td>
+<td>image/pjpeg</td></tr>
+<tr class="tablerowdark">
+<td>.jfif-tbnl</td>
+<td>image/jpeg</td></tr>
+<tr class="tablerowlight">
+<td>.jpe</td>
+<td>image/jpeg</td></tr>
+<tr class="tablerowdark">
+<td>.jpe</td>
+<td>image/pjpeg</td></tr>
+<tr class="tablerowlight">
+<td>.jpeg</td>
+<td>image/jpeg</td></tr>
+<tr class="tablerowdark">
+<td>.jpeg</td>
+<td>image/pjpeg</td></tr>
+<tr class="tablerowlight">
+<td>.jpg </td>
+<td>image/jpeg</td></tr>
+<tr class="tablerowdark">
+<td>.jpg </td>
+<td>image/pjpeg</td></tr>
+<tr class="tablerowlight">
+<td>.jps</td>
+<td>image/x-jps</td></tr>
+<tr class="tablerowdark">
+<td>.js </td>
+<td>application/x-javascript</td></tr>
+<tr class="tablerowlight">
+<td>.jut</td>
+<td>image/jutvision</td></tr>
+<tr class="tablerowdark">
+<td>.kar</td>
+<td>audio/midi</td></tr>
+<tr class="tablerowlight">
+<td>.kar</td>
+<td>music/x-karaoke</td></tr>
+<tr class="tablerowdark">
+<td>.ksh</td>
+<td>application/x-ksh</td></tr>
+<tr class="tablerowlight">
+<td>.ksh</td>
+<td>text/x-script.ksh</td></tr>
+<tr class="tablerowdark">
+<td>.la </td>
+<td>audio/nspaudio</td></tr>
+<tr class="tablerowlight">
+<td>.la </td>
+<td>audio/x-nspaudio</td></tr>
+<tr class="tablerowdark">
+<td>.lam</td>
+<td>audio/x-liveaudio</td></tr>
+<tr class="tablerowlight">
+<td>.latex </td>
+<td>application/x-latex</td></tr>
+<tr class="tablerowdark">
+<td>.lha</td>
+<td>application/lha</td></tr>
+<tr class="tablerowlight">
+<td>.lha</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowdark">
+<td>.lha</td>
+<td>application/x-lha</td></tr>
+<tr class="tablerowlight">
+<td>.lhx</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowdark">
+<td>.list</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.lma</td>
+<td>audio/nspaudio</td></tr>
+<tr class="tablerowdark">
+<td>.lma</td>
+<td>audio/x-nspaudio</td></tr>
+<tr class="tablerowlight">
+<td>.log </td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.lsp </td>
+<td>application/x-lisp</td></tr>
+<tr class="tablerowlight">
+<td>.lsp </td>
+<td>text/x-script.lisp</td></tr>
+<tr class="tablerowdark">
+<td>.lst </td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.lsx</td>
+<td>text/x-la-asf</td></tr>
+<tr class="tablerowdark">
+<td>.ltx</td>
+<td>application/x-latex</td></tr>
+<tr class="tablerowlight">
+<td>.lzh</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowdark">
+<td>.lzh</td>
+<td>application/x-lzh</td></tr>
+<tr class="tablerowlight">
+<td>.lzx</td>
+<td>application/lzx</td></tr>
+<tr class="tablerowdark">
+<td>.lzx</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowlight">
+<td>.lzx</td>
+<td>application/x-lzx</td></tr>
+<tr class="tablerowdark">
+<td>.m</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.m</td>
+<td>text/x-m</td></tr>
+<tr class="tablerowdark">
+<td>.m1v</td>
+<td>video/mpeg</td></tr>
+<tr class="tablerowlight">
+<td>.m2a</td>
+<td>audio/mpeg</td></tr>
+<tr class="tablerowdark">
+<td>.m2v</td>
+<td>video/mpeg</td></tr>
+<tr class="tablerowlight">
+<td>.m3u </td>
+<td>audio/x-mpequrl</td></tr>
+<tr class="tablerowdark">
+<td>.man</td>
+<td>application/x-troff-man</td></tr>
+<tr class="tablerowlight">
+<td>.map</td>
+<td>application/x-navimap</td></tr>
+<tr class="tablerowdark">
+<td>.mar</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.mbd</td>
+<td>application/mbedlet</td></tr>
+<tr class="tablerowdark">
+<td>.mc$</td>
+<td>application/x-magic-cap-package-1.0</td></tr>
+<tr class="tablerowlight">
+<td>.mcd</td>
+<td>application/mcad</td></tr>
+<tr class="tablerowdark">
+<td>.mcd</td>
+<td>application/x-mathcad</td></tr>
+<tr class="tablerowlight">
+<td>.mcf</td>
+<td>image/vasa</td></tr>
+<tr class="tablerowdark">
+<td>.mcf</td>
+<td>text/mcf</td></tr>
+<tr class="tablerowlight">
+<td>.mcp</td>
+<td>application/netmc</td></tr>
+<tr class="tablerowdark">
+<td>.me </td>
+<td>application/x-troff-me</td></tr>
+<tr class="tablerowlight">
+<td>.mht</td>
+<td>message/rfc822</td></tr>
+<tr class="tablerowdark">
+<td>.mhtml</td>
+<td>message/rfc822</td></tr>
+<tr class="tablerowlight">
+<td>.mid</td>
+<td>application/x-midi</td></tr>
+<tr class="tablerowdark">
+<td>.mid</td>
+<td>audio/midi</td></tr>
+<tr class="tablerowlight">
+<td>.mid</td>
+<td>audio/x-mid</td></tr>
+<tr class="tablerowdark">
+<td>.mid</td>
+<td>audio/x-midi</td></tr>
+<tr class="tablerowlight">
+<td>.mid</td>
+<td>music/crescendo</td></tr>
+<tr class="tablerowdark">
+<td>.mid</td>
+<td>x-music/x-midi</td></tr>
+<tr class="tablerowlight">
+<td>.midi</td>
+<td>application/x-midi</td></tr>
+<tr class="tablerowdark">
+<td>.midi</td>
+<td>audio/midi</td></tr>
+<tr class="tablerowlight">
+<td>.midi</td>
+<td>audio/x-mid</td></tr>
+<tr class="tablerowdark">
+<td>.midi</td>
+<td>audio/x-midi</td></tr>
+<tr class="tablerowlight">
+<td>.midi</td>
+<td>music/crescendo</td></tr>
+<tr class="tablerowdark">
+<td>.midi</td>
+<td>x-music/x-midi</td></tr>
+<tr class="tablerowlight">
+<td>.mif</td>
+<td>application/x-frame</td></tr>
+<tr class="tablerowdark">
+<td>.mif</td>
+<td>application/x-mif</td></tr>
+<tr class="tablerowlight">
+<td>.mime </td>
+<td>message/rfc822</td></tr>
+<tr class="tablerowdark">
+<td>.mime </td>
+<td>www/mime</td></tr>
+<tr class="tablerowlight">
+<td>.mjf</td>
+<td>audio/x-vnd.audioexplosion.mjuicemediafile</td></tr>
+<tr class="tablerowdark">
+<td>.mjpg </td>
+<td>video/x-motion-jpeg</td></tr>
+<tr class="tablerowlight">
+<td>.mm</td>
+<td>application/base64</td></tr>
+<tr class="tablerowdark">
+<td>.mm</td>
+<td>application/x-meme</td></tr>
+<tr class="tablerowlight">
+<td>.mme</td>
+<td>application/base64</td></tr>
+<tr class="tablerowdark">
+<td>.mod</td>
+<td>audio/mod</td></tr>
+<tr class="tablerowlight">
+<td>.mod</td>
+<td>audio/x-mod</td></tr>
+<tr class="tablerowdark">
+<td>.moov</td>
+<td>video/quicktime</td></tr>
+<tr class="tablerowlight">
+<td>.mov</td>
+<td>video/quicktime</td></tr>
+<tr class="tablerowdark">
+<td>.movie</td>
+<td>video/x-sgi-movie</td></tr>
+<tr class="tablerowlight">
+<td>.mp2</td>
+<td>audio/mpeg</td></tr>
+<tr class="tablerowdark">
+<td>.mp2</td>
+<td>audio/x-mpeg</td></tr>
+<tr class="tablerowlight">
+<td>.mp2</td>
+<td>video/mpeg</td></tr>
+<tr class="tablerowdark">
+<td>.mp2</td>
+<td>video/x-mpeg</td></tr>
+<tr class="tablerowlight">
+<td>.mp2</td>
+<td>video/x-mpeq2a</td></tr>
+<tr class="tablerowdark">
+<td>.mp3</td>
+<td>audio/mpeg3</td></tr>
+<tr class="tablerowlight">
+<td>.mp3</td>
+<td>audio/x-mpeg-3</td></tr>
+<tr class="tablerowdark">
+<td>.mp3</td>
+<td>video/mpeg</td></tr>
+<tr class="tablerowlight">
+<td>.mp3</td>
+<td>video/x-mpeg</td></tr>
+<tr class="tablerowdark">
+<td>.mpa</td>
+<td>audio/mpeg</td></tr>
+<tr class="tablerowlight">
+<td>.mpa</td>
+<td>video/mpeg</td></tr>
+<tr class="tablerowdark">
+<td>.mpc</td>
+<td>application/x-project</td></tr>
+<tr class="tablerowlight">
+<td>.mpe</td>
+<td>video/mpeg</td></tr>
+<tr class="tablerowdark">
+<td>.mpeg</td>
+<td>video/mpeg</td></tr>
+<tr class="tablerowlight">
+<td>.mpg</td>
+<td>audio/mpeg</td></tr>
+<tr class="tablerowdark">
+<td>.mpg</td>
+<td>video/mpeg</td></tr>
+<tr class="tablerowlight">
+<td>.mpga</td>
+<td>audio/mpeg</td></tr>
+<tr class="tablerowdark">
+<td>.mpp</td>
+<td>application/vnd.ms-project</td></tr>
+<tr class="tablerowlight">
+<td>.mpt</td>
+<td>application/x-project</td></tr>
+<tr class="tablerowdark">
+<td>.mpv</td>
+<td>application/x-project</td></tr>
+<tr class="tablerowlight">
+<td>.mpx</td>
+<td>application/x-project</td></tr>
+<tr class="tablerowdark">
+<td>.mrc</td>
+<td>application/marc</td></tr>
+<tr class="tablerowlight">
+<td>.ms</td>
+<td>application/x-troff-ms</td></tr>
+<tr class="tablerowdark">
+<td>.mv</td>
+<td>video/x-sgi-movie</td></tr>
+<tr class="tablerowlight">
+<td>.my</td>
+<td>audio/make</td></tr>
+<tr class="tablerowdark">
+<td>.mzz</td>
+<td>application/x-vnd.audioexplosion.mzz</td></tr>
+<tr class="tablerowlight">
+<td>.nap</td>
+<td>image/naplps</td></tr>
+<tr class="tablerowdark">
+<td>.naplps</td>
+<td>image/naplps</td></tr>
+<tr class="tablerowlight">
+<td>.nc</td>
+<td>application/x-netcdf</td></tr>
+<tr class="tablerowdark">
+<td>.ncm</td>
+<td>application/vnd.nokia.configuration-message</td></tr>
+<tr class="tablerowlight">
+<td>.nif</td>
+<td>image/x-niff</td></tr>
+<tr class="tablerowdark">
+<td>.niff</td>
+<td>image/x-niff</td></tr>
+<tr class="tablerowlight">
+<td>.nix</td>
+<td>application/x-mix-transfer</td></tr>
+<tr class="tablerowdark">
+<td>.nsc</td>
+<td>application/x-conference</td></tr>
+<tr class="tablerowlight">
+<td>.nvd</td>
+<td>application/x-navidoc</td></tr>
+<tr class="tablerowdark">
+<td>.o</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowlight">
+<td>.oda</td>
+<td>application/oda</td></tr>
+<tr class="tablerowdark">
+<td>.omc</td>
+<td>application/x-omc</td></tr>
+<tr class="tablerowlight">
+<td>.omcd</td>
+<td>application/x-omcdatamaker</td></tr>
+<tr class="tablerowdark">
+<td>.omcr</td>
+<td>application/x-omcregerator</td></tr>
+<tr class="tablerowlight">
+<td>.p</td>
+<td>text/x-pascal</td></tr>
+<tr class="tablerowdark">
+<td>.p10</td>
+<td>application/pkcs10</td></tr>
+<tr class="tablerowlight">
+<td>.p10</td>
+<td>application/x-pkcs10</td></tr>
+<tr class="tablerowdark">
+<td>.p12</td>
+<td>application/pkcs-12</td></tr>
+<tr class="tablerowlight">
+<td>.p12</td>
+<td>application/x-pkcs12</td></tr>
+<tr class="tablerowdark">
+<td>.p7a</td>
+<td>application/x-pkcs7-signature</td></tr>
+<tr class="tablerowlight">
+<td>.p7c</td>
+<td>application/pkcs7-mime</td></tr>
+<tr class="tablerowdark">
+<td>.p7c</td>
+<td>application/x-pkcs7-mime</td></tr>
+<tr class="tablerowlight">
+<td>.p7m</td>
+<td>application/pkcs7-mime</td></tr>
+<tr class="tablerowdark">
+<td>.p7m</td>
+<td>application/x-pkcs7-mime</td></tr>
+<tr class="tablerowlight">
+<td>.p7r</td>
+<td>application/x-pkcs7-certreqresp</td></tr>
+<tr class="tablerowdark">
+<td>.p7s</td>
+<td>application/pkcs7-signature</td></tr>
+<tr class="tablerowlight">
+<td>.part </td>
+<td>application/pro_eng</td></tr>
+<tr class="tablerowdark">
+<td>.pas</td>
+<td>text/pascal</td></tr>
+<tr class="tablerowlight">
+<td>.pbm </td>
+<td>image/x-portable-bitmap</td></tr>
+<tr class="tablerowdark">
+<td>.pcl</td>
+<td>application/vnd.hp-pcl</td></tr>
+<tr class="tablerowlight">
+<td>.pcl</td>
+<td>application/x-pcl</td></tr>
+<tr class="tablerowdark">
+<td>.pct</td>
+<td>image/x-pict</td></tr>
+<tr class="tablerowlight">
+<td>.pcx</td>
+<td>image/x-pcx</td></tr>
+<tr class="tablerowdark">
+<td>.pdb</td>
+<td>chemical/x-pdb</td></tr>
+<tr class="tablerowlight">
+<td>.pdf</td>
+<td>application/pdf</td></tr>
+<tr class="tablerowdark">
+<td>.pfunk</td>
+<td>audio/make</td></tr>
+<tr class="tablerowlight">
+<td>.pfunk</td>
+<td>audio/make.my.funk</td></tr>
+<tr class="tablerowdark">
+<td>.pgm</td>
+<td>image/x-portable-graymap</td></tr>
+<tr class="tablerowlight">
+<td>.pgm</td>
+<td>image/x-portable-greymap</td></tr>
+<tr class="tablerowdark">
+<td>.pic</td>
+<td>image/pict</td></tr>
+<tr class="tablerowlight">
+<td>.pict</td>
+<td>image/pict</td></tr>
+<tr class="tablerowdark">
+<td>.pkg</td>
+<td>application/x-newton-compatible-pkg</td></tr>
+<tr class="tablerowlight">
+<td>.pko</td>
+<td>application/vnd.ms-pki.pko</td></tr>
+<tr class="tablerowdark">
+<td>.pl</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.pl</td>
+<td>text/x-script.perl</td></tr>
+<tr class="tablerowdark">
+<td>.plx</td>
+<td>application/x-pixclscript</td></tr>
+<tr class="tablerowlight">
+<td>.pm</td>
+<td>image/x-xpixmap</td></tr>
+<tr class="tablerowdark">
+<td>.pm</td>
+<td>text/x-script.perl-module</td></tr>
+<tr class="tablerowlight">
+<td>.pm4 </td>
+<td>application/x-pagemaker</td></tr>
+<tr class="tablerowdark">
+<td>.pm5</td>
+<td>application/x-pagemaker</td></tr>
+<tr class="tablerowlight">
+<td>.png</td>
+<td>image/png</td></tr>
+<tr class="tablerowdark">
+<td>.pnm</td>
+<td>application/x-portable-anymap</td></tr>
+<tr class="tablerowlight">
+<td>.pnm</td>
+<td>image/x-portable-anymap</td></tr>
+<tr class="tablerowdark">
+<td>.pot</td>
+<td>application/mspowerpoint</td></tr>
+<tr class="tablerowlight">
+<td>.pot</td>
+<td>application/vnd.ms-powerpoint</td></tr>
+<tr class="tablerowdark">
+<td>.pov</td>
+<td>model/x-pov</td></tr>
+<tr class="tablerowlight">
+<td>.ppa</td>
+<td>application/vnd.ms-powerpoint</td></tr>
+<tr class="tablerowdark">
+<td>.ppm</td>
+<td>image/x-portable-pixmap</td></tr>
+<tr class="tablerowlight">
+<td>.pps</td>
+<td>application/mspowerpoint</td></tr>
+<tr class="tablerowdark">
+<td>.pps</td>
+<td>application/vnd.ms-powerpoint</td></tr>
+<tr class="tablerowlight">
+<td>.ppt</td>
+<td>application/mspowerpoint</td></tr>
+<tr class="tablerowdark">
+<td>.ppt</td>
+<td>application/powerpoint</td></tr>
+<tr class="tablerowlight">
+<td>.ppt</td>
+<td>application/vnd.ms-powerpoint</td></tr>
+<tr class="tablerowdark">
+<td>.ppt</td>
+<td>application/x-mspowerpoint</td></tr>
+<tr class="tablerowlight">
+<td>.ppz</td>
+<td>application/mspowerpoint</td></tr>
+<tr class="tablerowdark">
+<td>.pre</td>
+<td>application/x-freelance</td></tr>
+<tr class="tablerowlight">
+<td>.prt</td>
+<td>application/pro_eng</td></tr>
+<tr class="tablerowdark">
+<td>.ps</td>
+<td>application/postscript</td></tr>
+<tr class="tablerowlight">
+<td>.psd</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowdark">
+<td>.pvu</td>
+<td>paleovu/x-pv</td></tr>
+<tr class="tablerowlight">
+<td>.pwz </td>
+<td>application/vnd.ms-powerpoint</td></tr>
+<tr class="tablerowdark">
+<td>.py </td>
+<td>text/x-script.phyton</td></tr>
+<tr class="tablerowlight">
+<td>.pyc </td>
+<td>applicaiton/x-bytecode.python</td></tr>
+<tr class="tablerowdark">
+<td>.qcp </td>
+<td>audio/vnd.qcelp</td></tr>
+<tr class="tablerowlight">
+<td>.qd3 </td>
+<td>x-world/x-3dmf</td></tr>
+<tr class="tablerowdark">
+<td>.qd3d </td>
+<td>x-world/x-3dmf</td></tr>
+<tr class="tablerowlight">
+<td>.qif</td>
+<td>image/x-quicktime</td></tr>
+<tr class="tablerowdark">
+<td>.qt</td>
+<td>video/quicktime</td></tr>
+<tr class="tablerowlight">
+<td>.qtc</td>
+<td>video/x-qtc</td></tr>
+<tr class="tablerowdark">
+<td>.qti</td>
+<td>image/x-quicktime</td></tr>
+<tr class="tablerowlight">
+<td>.qtif</td>
+<td>image/x-quicktime</td></tr>
+<tr class="tablerowdark">
+<td>.ra</td>
+<td>audio/x-pn-realaudio</td></tr>
+<tr class="tablerowlight">
+<td>.ra</td>
+<td>audio/x-pn-realaudio-plugin</td></tr>
+<tr class="tablerowdark">
+<td>.ra</td>
+<td>audio/x-realaudio</td></tr>
+<tr class="tablerowlight">
+<td>.ram</td>
+<td>audio/x-pn-realaudio</td></tr>
+<tr class="tablerowdark">
+<td>.ras</td>
+<td>application/x-cmu-raster</td></tr>
+<tr class="tablerowlight">
+<td>.ras</td>
+<td>image/cmu-raster</td></tr>
+<tr class="tablerowdark">
+<td>.ras</td>
+<td>image/x-cmu-raster</td></tr>
+<tr class="tablerowlight">
+<td>.rast</td>
+<td>image/cmu-raster</td></tr>
+<tr class="tablerowdark">
+<td>.rexx </td>
+<td>text/x-script.rexx</td></tr>
+<tr class="tablerowlight">
+<td>.rf</td>
+<td>image/vnd.rn-realflash</td></tr>
+<tr class="tablerowdark">
+<td>.rgb </td>
+<td>image/x-rgb</td></tr>
+<tr class="tablerowlight">
+<td>.rm</td>
+<td>application/vnd.rn-realmedia</td></tr>
+<tr class="tablerowdark">
+<td>.rm</td>
+<td>audio/x-pn-realaudio</td></tr>
+<tr class="tablerowlight">
+<td>.rmi</td>
+<td>audio/mid</td></tr>
+<tr class="tablerowdark">
+<td>.rmm </td>
+<td>audio/x-pn-realaudio</td></tr>
+<tr class="tablerowlight">
+<td>.rmp</td>
+<td>audio/x-pn-realaudio</td></tr>
+<tr class="tablerowdark">
+<td>.rmp</td>
+<td>audio/x-pn-realaudio-plugin</td></tr>
+<tr class="tablerowlight">
+<td>.rng</td>
+<td>application/ringing-tones</td></tr>
+<tr class="tablerowdark">
+<td>.rng</td>
+<td>application/vnd.nokia.ringing-tone</td></tr>
+<tr class="tablerowlight">
+<td>.rnx </td>
+<td>application/vnd.rn-realplayer</td></tr>
+<tr class="tablerowdark">
+<td>.roff</td>
+<td>application/x-troff</td></tr>
+<tr class="tablerowlight">
+<td>.rp </td>
+<td>image/vnd.rn-realpix</td></tr>
+<tr class="tablerowdark">
+<td>.rpm</td>
+<td>audio/x-pn-realaudio-plugin</td></tr>
+<tr class="tablerowlight">
+<td>.rt</td>
+<td>text/richtext</td></tr>
+<tr class="tablerowdark">
+<td>.rt</td>
+<td>text/vnd.rn-realtext</td></tr>
+<tr class="tablerowlight">
+<td>.rtf</td>
+<td>application/rtf</td></tr>
+<tr class="tablerowdark">
+<td>.rtf</td>
+<td>application/x-rtf</td></tr>
+<tr class="tablerowlight">
+<td>.rtf</td>
+<td>text/richtext</td></tr>
+<tr class="tablerowdark">
+<td>.rtx</td>
+<td>application/rtf</td></tr>
+<tr class="tablerowlight">
+<td>.rtx</td>
+<td>text/richtext</td></tr>
+<tr class="tablerowdark">
+<td>.rv</td>
+<td>video/vnd.rn-realvideo</td></tr>
+<tr class="tablerowlight">
+<td>.s</td>
+<td>text/x-asm</td></tr>
+<tr class="tablerowdark">
+<td>.s3m </td>
+<td>audio/s3m</td></tr>
+<tr class="tablerowlight">
+<td>.saveme</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowdark">
+<td>.sbk </td>
+<td>application/x-tbook</td></tr>
+<tr class="tablerowlight">
+<td>.scm</td>
+<td>application/x-lotusscreencam</td></tr>
+<tr class="tablerowdark">
+<td>.scm</td>
+<td>text/x-script.guile</td></tr>
+<tr class="tablerowlight">
+<td>.scm</td>
+<td>text/x-script.scheme</td></tr>
+<tr class="tablerowdark">
+<td>.scm</td>
+<td>video/x-scm</td></tr>
+<tr class="tablerowlight">
+<td>.sdml</td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.sdp </td>
+<td>application/sdp</td></tr>
+<tr class="tablerowlight">
+<td>.sdp </td>
+<td>application/x-sdp</td></tr>
+<tr class="tablerowdark">
+<td>.sdr</td>
+<td>application/sounder</td></tr>
+<tr class="tablerowlight">
+<td>.sea</td>
+<td>application/sea</td></tr>
+<tr class="tablerowdark">
+<td>.sea</td>
+<td>application/x-sea</td></tr>
+<tr class="tablerowlight">
+<td>.set</td>
+<td>application/set</td></tr>
+<tr class="tablerowdark">
+<td>.sgm </td>
+<td>text/sgml</td></tr>
+<tr class="tablerowlight">
+<td>.sgm </td>
+<td>text/x-sgml</td></tr>
+<tr class="tablerowdark">
+<td>.sgml</td>
+<td>text/sgml</td></tr>
+<tr class="tablerowlight">
+<td>.sgml</td>
+<td>text/x-sgml</td></tr>
+<tr class="tablerowdark">
+<td>.sh</td>
+<td>application/x-bsh</td></tr>
+<tr class="tablerowlight">
+<td>.sh</td>
+<td>application/x-sh</td></tr>
+<tr class="tablerowdark">
+<td>.sh</td>
+<td>application/x-shar</td></tr>
+<tr class="tablerowlight">
+<td>.sh</td>
+<td>text/x-script.sh</td></tr>
+<tr class="tablerowdark">
+<td>.shar</td>
+<td>application/x-bsh</td></tr>
+<tr class="tablerowlight">
+<td>.shar</td>
+<td>application/x-shar</td></tr>
+<tr class="tablerowdark">
+<td>.shtml </td>
+<td>text/html</td></tr>
+<tr class="tablerowlight">
+<td>.shtml</td>
+<td>text/x-server-parsed-html</td></tr>
+<tr class="tablerowdark">
+<td>.sid</td>
+<td>audio/x-psid</td></tr>
+<tr class="tablerowlight">
+<td>.sit</td>
+<td>application/x-sit</td></tr>
+<tr class="tablerowdark">
+<td>.sit</td>
+<td>application/x-stuffit</td></tr>
+<tr class="tablerowlight">
+<td>.skd</td>
+<td>application/x-koan</td></tr>
+<tr class="tablerowdark">
+<td>.skm </td>
+<td>application/x-koan</td></tr>
+<tr class="tablerowlight">
+<td>.skp </td>
+<td>application/x-koan</td></tr>
+<tr class="tablerowdark">
+<td>.skt </td>
+<td>application/x-koan</td></tr>
+<tr class="tablerowlight">
+<td>.sl </td>
+<td>application/x-seelogo</td></tr>
+<tr class="tablerowdark">
+<td>.smi </td>
+<td>application/smil</td></tr>
+<tr class="tablerowlight">
+<td>.smil </td>
+<td>application/smil</td></tr>
+<tr class="tablerowdark">
+<td>.snd</td>
+<td>audio/basic</td></tr>
+<tr class="tablerowlight">
+<td>.snd</td>
+<td>audio/x-adpcm</td></tr>
+<tr class="tablerowdark">
+<td>.sol</td>
+<td>application/solids</td></tr>
+<tr class="tablerowlight">
+<td>.spc </td>
+<td>application/x-pkcs7-certificates</td></tr>
+<tr class="tablerowdark">
+<td>.spc </td>
+<td>text/x-speech</td></tr>
+<tr class="tablerowlight">
+<td>.spl</td>
+<td>application/futuresplash</td></tr>
+<tr class="tablerowdark">
+<td>.spr</td>
+<td>application/x-sprite</td></tr>
+<tr class="tablerowlight">
+<td>.sprite </td>
+<td>application/x-sprite</td></tr>
+<tr class="tablerowdark">
+<td>.src</td>
+<td>application/x-wais-source</td></tr>
+<tr class="tablerowlight">
+<td>.ssi</td>
+<td>text/x-server-parsed-html</td></tr>
+<tr class="tablerowdark">
+<td>.ssm </td>
+<td>application/streamingmedia</td></tr>
+<tr class="tablerowlight">
+<td>.sst</td>
+<td>application/vnd.ms-pki.certstore</td></tr>
+<tr class="tablerowdark">
+<td>.step</td>
+<td>application/step</td></tr>
+<tr class="tablerowlight">
+<td>.stl</td>
+<td>application/sla</td></tr>
+<tr class="tablerowdark">
+<td>.stl</td>
+<td>application/vnd.ms-pki.stl</td></tr>
+<tr class="tablerowlight">
+<td>.stl</td>
+<td>application/x-navistyle</td></tr>
+<tr class="tablerowdark">
+<td>.stp</td>
+<td>application/step</td></tr>
+<tr class="tablerowlight">
+<td>.sv4cpio</td>
+<td>application/x-sv4cpio</td></tr>
+<tr class="tablerowdark">
+<td>.sv4crc</td>
+<td>application/x-sv4crc</td></tr>
+<tr class="tablerowlight">
+<td>.svf</td>
+<td>image/vnd.dwg</td></tr>
+<tr class="tablerowdark">
+<td>.svf</td>
+<td>image/x-dwg</td></tr>
+<tr class="tablerowlight">
+<td>.svr</td>
+<td>application/x-world</td></tr>
+<tr class="tablerowdark">
+<td>.svr</td>
+<td>x-world/x-svr</td></tr>
+<tr class="tablerowlight">
+<td>.swf</td>
+<td>application/x-shockwave-flash</td></tr>
+<tr class="tablerowdark">
+<td>.t</td>
+<td>application/x-troff</td></tr>
+<tr class="tablerowlight">
+<td>.talk</td>
+<td>text/x-speech</td></tr>
+<tr class="tablerowdark">
+<td>.tar</td>
+<td>application/x-tar</td></tr>
+<tr class="tablerowlight">
+<td>.tbk</td>
+<td>application/toolbook</td></tr>
+<tr class="tablerowdark">
+<td>.tbk</td>
+<td>application/x-tbook</td></tr>
+<tr class="tablerowlight">
+<td>.tcl</td>
+<td>application/x-tcl</td></tr>
+<tr class="tablerowdark">
+<td>.tcl</td>
+<td>text/x-script.tcl</td></tr>
+<tr class="tablerowlight">
+<td>.tcsh</td>
+<td>text/x-script.tcsh</td></tr>
+<tr class="tablerowdark">
+<td>.tex</td>
+<td>application/x-tex</td></tr>
+<tr class="tablerowlight">
+<td>.texi</td>
+<td>application/x-texinfo</td></tr>
+<tr class="tablerowdark">
+<td>.texinfo</td>
+<td>application/x-texinfo</td></tr>
+<tr class="tablerowlight">
+<td>.text</td>
+<td>application/plain</td></tr>
+<tr class="tablerowdark">
+<td>.text</td>
+<td>text/plain</td></tr>
+<tr class="tablerowlight">
+<td>.tgz</td>
+<td>application/gnutar</td></tr>
+<tr class="tablerowdark">
+<td>.tgz</td>
+<td>application/x-compressed</td></tr>
+<tr class="tablerowlight">
+<td>.tif</td>
+<td>image/tiff</td></tr>
+<tr class="tablerowdark">
+<td>.tif</td>
+<td>image/x-tiff</td></tr>
+<tr class="tablerowlight">
+<td>.tiff</td>
+<td>image/tiff</td></tr>
+<tr class="tablerowdark">
+<td>.tiff</td>
+<td>image/x-tiff</td></tr>
+<tr class="tablerowlight">
+<td>.tr</td>
+<td>application/x-troff</td></tr>
+<tr class="tablerowdark">
+<td>.tsi</td>
+<td>audio/tsp-audio</td></tr>
+<tr class="tablerowlight">
+<td>.tsp</td>
+<td>application/dsptype</td></tr>
+<tr class="tablerowdark">
+<td>.tsp</td>
+<td>audio/tsplayer</td></tr>
+<tr class="tablerowlight">
+<td>.tsv</td>
+<td>text/tab-separated-values</td></tr>
+<tr class="tablerowdark">
+<td>.turbot</td>
+<td>image/florian</td></tr>
+<tr class="tablerowlight">
+<td>.txt</td>
+<td>text/plain</td></tr>
+<tr class="tablerowdark">
+<td>.uil</td>
+<td>text/x-uil</td></tr>
+<tr class="tablerowlight">
+<td>.uni</td>
+<td>text/uri-list</td></tr>
+<tr class="tablerowdark">
+<td>.unis</td>
+<td>text/uri-list</td></tr>
+<tr class="tablerowlight">
+<td>.unv</td>
+<td>application/i-deas</td></tr>
+<tr class="tablerowdark">
+<td>.uri</td>
+<td>text/uri-list</td></tr>
+<tr class="tablerowlight">
+<td>.uris</td>
+<td>text/uri-list</td></tr>
+<tr class="tablerowdark">
+<td>.ustar</td>
+<td>application/x-ustar</td></tr>
+<tr class="tablerowlight">
+<td>.ustar</td>
+<td>multipart/x-ustar</td></tr>
+<tr class="tablerowdark">
+<td>.uu</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowlight">
+<td>.uu</td>
+<td>text/x-uuencode</td></tr>
+<tr class="tablerowdark">
+<td>.uue</td>
+<td>text/x-uuencode</td></tr>
+<tr class="tablerowlight">
+<td>.vcd</td>
+<td>application/x-cdlink</td></tr>
+<tr class="tablerowdark">
+<td>.vcs</td>
+<td>text/x-vcalendar</td></tr>
+<tr class="tablerowlight">
+<td>.vda</td>
+<td>application/vda</td></tr>
+<tr class="tablerowdark">
+<td>.vdo</td>
+<td>video/vdo</td></tr>
+<tr class="tablerowlight">
+<td>.vew </td>
+<td>application/groupwise</td></tr>
+<tr class="tablerowdark">
+<td>.viv</td>
+<td>video/vivo</td></tr>
+<tr class="tablerowlight">
+<td>.viv</td>
+<td>video/vnd.vivo</td></tr>
+<tr class="tablerowdark">
+<td>.vivo</td>
+<td>video/vivo</td></tr>
+<tr class="tablerowlight">
+<td>.vivo</td>
+<td>video/vnd.vivo</td></tr>
+<tr class="tablerowdark">
+<td>.vmd </td>
+<td>application/vocaltec-media-desc</td></tr>
+<tr class="tablerowlight">
+<td>.vmf</td>
+<td>application/vocaltec-media-file</td></tr>
+<tr class="tablerowdark">
+<td>.voc</td>
+<td>audio/voc</td></tr>
+<tr class="tablerowlight">
+<td>.voc</td>
+<td>audio/x-voc</td></tr>
+<tr class="tablerowdark">
+<td>.vos</td>
+<td>video/vosaic</td></tr>
+<tr class="tablerowlight">
+<td>.vox</td>
+<td>audio/voxware</td></tr>
+<tr class="tablerowdark">
+<td>.vqe</td>
+<td>audio/x-twinvq-plugin</td></tr>
+<tr class="tablerowlight">
+<td>.vqf</td>
+<td>audio/x-twinvq</td></tr>
+<tr class="tablerowdark">
+<td>.vql</td>
+<td>audio/x-twinvq-plugin</td></tr>
+<tr class="tablerowlight">
+<td>.vrml</td>
+<td>application/x-vrml</td></tr>
+<tr class="tablerowdark">
+<td>.vrml</td>
+<td>model/vrml</td></tr>
+<tr class="tablerowlight">
+<td>.vrml</td>
+<td>x-world/x-vrml</td></tr>
+<tr class="tablerowdark">
+<td>.vrt</td>
+<td>x-world/x-vrt</td></tr>
+<tr class="tablerowlight">
+<td>.vsd</td>
+<td>application/x-visio</td></tr>
+<tr class="tablerowdark">
+<td>.vst</td>
+<td>application/x-visio</td></tr>
+<tr class="tablerowlight">
+<td>.vsw </td>
+<td>application/x-visio</td></tr>
+<tr class="tablerowdark">
+<td>.w60</td>
+<td>application/wordperfect6.0</td></tr>
+<tr class="tablerowlight">
+<td>.w61</td>
+<td>application/wordperfect6.1</td></tr>
+<tr class="tablerowdark">
+<td>.w6w</td>
+<td>application/msword</td></tr>
+<tr class="tablerowlight">
+<td>.wav</td>
+<td>audio/wav</td></tr>
+<tr class="tablerowdark">
+<td>.wav</td>
+<td>audio/x-wav</td></tr>
+<tr class="tablerowlight">
+<td>.wb1</td>
+<td>application/x-qpro</td></tr>
+<tr class="tablerowdark">
+<td>.wbmp</td>
+<td>image/vnd.wap.wbmp</td></tr>
+<tr class="tablerowlight">
+<td>.web</td>
+<td>application/vnd.xara</td></tr>
+<tr class="tablerowdark">
+<td>.wiz</td>
+<td>application/msword</td></tr>
+<tr class="tablerowlight">
+<td>.wk1</td>
+<td>application/x-123</td></tr>
+<tr class="tablerowdark">
+<td>.wmf</td>
+<td>windows/metafile</td></tr>
+<tr class="tablerowlight">
+<td>.wml</td>
+<td>text/vnd.wap.wml</td></tr>
+<tr class="tablerowdark">
+<td>.wmlc </td>
+<td>application/vnd.wap.wmlc</td></tr>
+<tr class="tablerowlight">
+<td>.wmls</td>
+<td>text/vnd.wap.wmlscript</td></tr>
+<tr class="tablerowdark">
+<td>.wmlsc </td>
+<td>application/vnd.wap.wmlscriptc</td></tr>
+<tr class="tablerowlight">
+<td>.word </td>
+<td>application/msword</td></tr>
+<tr class="tablerowdark">
+<td>.wp</td>
+<td>application/wordperfect</td></tr>
+<tr class="tablerowlight">
+<td>.wp5</td>
+<td>application/wordperfect</td></tr>
+<tr class="tablerowdark">
+<td>.wp5</td>
+<td>application/wordperfect6.0</td></tr>
+<tr class="tablerowlight">
+<td>.wp6 </td>
+<td>application/wordperfect</td></tr>
+<tr class="tablerowdark">
+<td>.wpd</td>
+<td>application/wordperfect</td></tr>
+<tr class="tablerowlight">
+<td>.wpd</td>
+<td>application/x-wpwin</td></tr>
+<tr class="tablerowdark">
+<td>.wq1</td>
+<td>application/x-lotus</td></tr>
+<tr class="tablerowlight">
+<td>.wri</td>
+<td>application/mswrite</td></tr>
+<tr class="tablerowdark">
+<td>.wri</td>
+<td>application/x-wri</td></tr>
+<tr class="tablerowlight">
+<td>.wrl</td>
+<td>application/x-world</td></tr>
+<tr class="tablerowdark">
+<td>.wrl</td>
+<td>model/vrml</td></tr>
+<tr class="tablerowlight">
+<td>.wrl</td>
+<td>x-world/x-vrml</td></tr>
+<tr class="tablerowdark">
+<td>.wrz</td>
+<td>model/vrml</td></tr>
+<tr class="tablerowlight">
+<td>.wrz</td>
+<td>x-world/x-vrml</td></tr>
+<tr class="tablerowdark">
+<td>.wsc</td>
+<td>text/scriplet</td></tr>
+<tr class="tablerowlight">
+<td>.wsrc</td>
+<td>application/x-wais-source</td></tr>
+<tr class="tablerowdark">
+<td>.wtk </td>
+<td>application/x-wintalk</td></tr>
+<tr class="tablerowlight">
+<td>.xbm</td>
+<td>image/x-xbitmap</td></tr>
+<tr class="tablerowdark">
+<td>.xbm</td>
+<td>image/x-xbm</td></tr>
+<tr class="tablerowlight">
+<td>.xbm</td>
+<td>image/xbm</td></tr>
+<tr class="tablerowdark">
+<td>.xdr</td>
+<td>video/x-amt-demorun</td></tr>
+<tr class="tablerowlight">
+<td>.xgz</td>
+<td>xgl/drawing</td></tr>
+<tr class="tablerowdark">
+<td>.xif</td>
+<td>image/vnd.xiff</td></tr>
+<tr class="tablerowlight">
+<td>.xl</td>
+<td>application/excel</td></tr>
+<tr class="tablerowdark">
+<td>.xla</td>
+<td>application/excel</td></tr>
+<tr class="tablerowlight">
+<td>.xla</td>
+<td>application/x-excel</td></tr>
+<tr class="tablerowdark">
+<td>.xla</td>
+<td>application/x-msexcel</td></tr>
+<tr class="tablerowlight">
+<td>.xlb</td>
+<td>application/excel</td></tr>
+<tr class="tablerowdark">
+<td>.xlb</td>
+<td>application/vnd.ms-excel</td></tr>
+<tr class="tablerowlight">
+<td>.xlb</td>
+<td>application/x-excel</td></tr>
+<tr class="tablerowdark">
+<td>.xlc</td>
+<td>application/excel</td></tr>
+<tr class="tablerowlight">
+<td>.xlc</td>
+<td>application/vnd.ms-excel</td></tr>
+<tr class="tablerowdark">
+<td>.xlc</td>
+<td>application/x-excel</td></tr>
+<tr class="tablerowlight">
+<td>.xld </td>
+<td>application/excel</td></tr>
+<tr class="tablerowdark">
+<td>.xld </td>
+<td>application/x-excel</td></tr>
+<tr class="tablerowlight">
+<td>.xlk</td>
+<td>application/excel</td></tr>
+<tr class="tablerowdark">
+<td>.xlk</td>
+<td>application/x-excel</td></tr>
+<tr class="tablerowlight">
+<td>.xll</td>
+<td>application/excel</td></tr>
+<tr class="tablerowdark">
+<td>.xll</td>
+<td>application/vnd.ms-excel</td></tr>
+<tr class="tablerowlight">
+<td>.xll</td>
+<td>application/x-excel</td></tr>
+<tr class="tablerowdark">
+<td>.xlm</td>
+<td>application/excel</td></tr>
+<tr class="tablerowlight">
+<td>.xlm</td>
+<td>application/vnd.ms-excel</td></tr>
+<tr class="tablerowdark">
+<td>.xlm</td>
+<td>application/x-excel</td></tr>
+<tr class="tablerowlight">
+<td>.xls</td>
+<td>application/excel</td></tr>
+<tr class="tablerowdark">
+<td>.xls</td>
+<td>application/vnd.ms-excel</td></tr>
+<tr class="tablerowlight">
+<td>.xls</td>
+<td>application/x-excel</td></tr>
+<tr class="tablerowdark">
+<td>.xls</td>
+<td>application/x-msexcel</td></tr>
+<tr class="tablerowlight">
+<td>.xlt</td>
+<td>application/excel</td></tr>
+<tr class="tablerowdark">
+<td>.xlt</td>
+<td>application/x-excel</td></tr>
+<tr class="tablerowlight">
+<td>.xlv</td>
+<td>application/excel</td></tr>
+<tr class="tablerowdark">
+<td>.xlv</td>
+<td>application/x-excel</td></tr>
+<tr class="tablerowlight">
+<td>.xlw</td>
+<td>application/excel</td></tr>
+<tr class="tablerowdark">
+<td>.xlw</td>
+<td>application/vnd.ms-excel</td></tr>
+<tr class="tablerowlight">
+<td>.xlw</td>
+<td>application/x-excel</td></tr>
+<tr class="tablerowdark">
+<td>.xlw</td>
+<td>application/x-msexcel</td></tr>
+<tr class="tablerowlight">
+<td>.xm</td>
+<td>audio/xm</td></tr>
+<tr class="tablerowdark">
+<td>.xml</td>
+<td>application/xml</td></tr>
+<tr class="tablerowlight">
+<td>.xml</td>
+<td>text/xml</td></tr>
+<tr class="tablerowdark">
+<td>.xmz</td>
+<td>xgl/movie</td></tr>
+<tr class="tablerowlight">
+<td>.xpix</td>
+<td>application/x-vnd.ls-xpix</td></tr>
+<tr class="tablerowdark">
+<td>.xpm</td>
+<td>image/x-xpixmap</td></tr>
+<tr class="tablerowlight">
+<td>.xpm</td>
+<td>image/xpm</td></tr>
+<tr class="tablerowdark">
+<td>.x-png</td>
+<td>image/png</td></tr>
+<tr class="tablerowlight">
+<td>.xsr</td>
+<td>video/x-amt-showrun</td></tr>
+<tr class="tablerowdark">
+<td>.xwd</td>
+<td>image/x-xwd</td></tr>
+<tr class="tablerowlight">
+<td>.xwd</td>
+<td>image/x-xwindowdump</td></tr>
+<tr class="tablerowdark">
+<td>.xyz</td>
+<td>chemical/x-pdb</td></tr>
+<tr class="tablerowlight">
+<td>.z</td>
+<td>application/x-compress</td></tr>
+<tr class="tablerowdark">
+<td>.z</td>
+<td>application/x-compressed</td></tr>
+<tr class="tablerowlight">
+<td>.zip</td>
+<td>application/x-compressed</td></tr>
+<tr class="tablerowdark">
+<td>.zip</td>
+<td>application/x-zip-compressed</td></tr>
+<tr class="tablerowlight">
+<td>.zip</td>
+<td>application/zip</td></tr>
+<tr class="tablerowdark">
+<td>.zip</td>
+<td>multipart/x-zip</td></tr>
+<tr class="tablerowlight">
+<td>.zoo</td>
+<td>application/octet-stream</td></tr>
+<tr class="tablerowdark">
+<td>.zsh</td>
+<td>text/x-script.zsh</td></tr>
+</table>
