@@ -176,7 +176,7 @@ class Greenform{
 		// let's check if we have any file inputs and, if so, has a request been made to upload them via Ajax
 		if(($this->settings['jquerySubmit'] && ($this->EE->input->post('fileUploadAjax') == true)) || ((false !== $this->EE->input->get('upload_id')) && (false !== $this->EE->input->get('stamp')))){
 			// request made - upload any files to be verified later
-			$this->EE->form_file_validation->handleAjaxUpload();
+			$this->EE->form_file_validation->handleAjaxUpload($this->getFormValidation());
 		}
 
 		

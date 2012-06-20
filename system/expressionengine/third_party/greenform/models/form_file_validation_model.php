@@ -311,7 +311,7 @@ class Form_File_Validation_model extends CI_Model{
 	 * @return array
 	 */
 	public function getFileInputs($arrRules = null){
-		if(is_array($arrRules) || (count($this->fileInputs) == 0)){
+		if(is_array($arrRules)){
 			$this->fileInputs = $this->parseFileInputs($arrRules);
 		}
 
@@ -319,7 +319,7 @@ class Form_File_Validation_model extends CI_Model{
 	}
 
 	/**
-	 * parses the given string for any file inputs and adds them to the validation list
+	 * parses the validation rules for any file inputs and adds them to the validation list
 	 * It returns a list of any found file inputs
 	 *
 	 * @param array $arrRules
@@ -642,165 +642,179 @@ class Form_File_Validation_model extends CI_Model{
 	 * This deals with displaying file uploads when
 	 * uploading through an Ajax submitted form
 	 *
+	 * @param array $arrRules
 	 * @return void
 	 */
-	public function handleAjaxUpload(){
+	public function handleAjaxUpload($arrRules){
 		header('Cache-Control: no-cache, must-revalidate');
 		header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 
 		if($this->isReferrerLocal()){
-			extract($_REQUEST);
+			$fileInputs = $this->getFileInputs($arrRules);
 
-			// servlet that handles uploadprogress requests:
-			if(isset($upload_id)){
-				$data = array();
+			if(empty($fileInputs)){
+				// there aren't actually any file inputs specified in the rules
+				$data['error'] = $this->EE->lang->line('validation_no_file_inputs');
+				die(json_encode($data));
+			}else{
+				extract($_REQUEST);
 
-				switch($this->getFileUploadMethod()){
-					case self::UPLOAD_TYPE_UPLOAD_PROGRESS:
-						if(function_exists('uploadprogress_get_info')){
-							// the uploadprogress module is installed
-							if(!is_array($data = uploadprogress_get_info($upload_id))){
-								// the file wasn't found
-								$data['error'] = $this->EE->lang->line('validation_upload_no_id');
-								// no need to define the variables on success as this module sets them all as we want
+				// servlet that handles uploadprogress requests:
+				if(isset($upload_id)){
+					$data = array();
+
+					switch($this->getFileUploadMethod()){
+						case self::UPLOAD_TYPE_UPLOAD_PROGRESS:
+							if(function_exists('uploadprogress_get_info')){
+								// the uploadprogress module is installed
+								if(!is_array($data = uploadprogress_get_info($upload_id))){
+									// the file wasn't found
+									$data['error'] = $this->EE->lang->line('validation_upload_no_id');
+									// no need to define the variables on success as this module sets them all as we want
+								}
+							}else{
+								// no upload progress functionality was found
+								$data['error'] = $this->EE->lang->line('validation_upload_not_available');
 							}
-						}else{
+						break;
+						case self::UPLOAD_TYPE_ACP:
+							if(function_exists('apc_fetch')){
+								// the APC module is installed
+								if(false === ($tmpData = apc_fetch('upload_' . $upload_id))){
+									// the file wasn't found
+									$data['error'] = $this->EE->lang->line('validation_upload_no_id');
+								}else{
+									// define the $data array
+									$fltTime = time();
+									$fltTimeTaken = ($fltTime > $tmpData['start_time']) ? $fltTime - $tmpData['start_time'] : 0;
+									$data['time_taken'] = $fltTimeTaken;
+									// define the $data array
+									$data['bytes_uploaded'] = $tmpData['current'];																		// the bytes uploaded
+									$data['bytes_total'] = $tmpData['total'];																			// the total file size
+									$data['speed_average'] = ($fltTimeTaken == 0) ? $data['bytes_uploaded'] : $data['bytes_uploaded'] / $fltTimeTaken;	// the average upload speed in bytes
+									$data['est_sec'] = ($data['bytes_total'] - $data['bytes_uploaded']) / $data['speed_average'];						// estimated seconds until complete
+								}
+							}else{
+								// no APC functionality was found
+								$data['error'] = $this->EE->lang->line('validation_upload_not_available');
+							}
+						break;
+						case self::UPLOAD_TYPE_SESSION_UPLOAD_PROGRESS:
+							if(ini_get('session.upload_progress.enabled')){
+								// session.upload_progress is enabled, we must be running PHP 5.4+
+								$strKey = ini_get('session.upload_progress.prefix') . ini_get('session.upload_progress.name') . $upload_id;
+
+								if(isset($_SESSION[$strKey]) && is_array($_SESSION[$strKey]) && !empty($_SESSION[$strKey])){
+									$fltTime = time();
+									$fltTimeTaken = ($fltTime > $_SESSION[$strKey]['start_time']) ? $fltTime - $_SESSION[$strKey]['start_time'] : 0;
+									$data['time_taken'] = $fltTimeTaken;
+									// define the $data array
+									$data['bytes_uploaded'] = $_SESSION[$strKey]['bytes_processed'];													// the bytes uploaded
+									$data['bytes_total'] = $_SESSION[$strKey]['content_length'];														// the total file size
+									$data['speed_average'] = ($fltTimeTaken == 0) ? $data['bytes_uploaded'] : $data['bytes_uploaded'] / $fltTimeTaken;	// the average upload speed in bytes
+									$data['est_sec'] = ($data['bytes_total'] - $data['bytes_uploaded']) / $data['speed_average'];						// estimated seconds until complete
+								}
+							}else{
+								// no session.uploadprogress functionality was found
+								$data['error'] = $this->EE->lang->line('validation_upload_not_available');
+							}
+						break;
+						default:
 							// no upload progress functionality was found
 							$data['error'] = $this->EE->lang->line('validation_upload_not_available');
+						break;
+					}
+
+					if(!empty($data) && (!isset($data['error']) || empty($data['error']))){
+						// data has been set
+
+						if($this->getMaxUploadSize() < $data['bytes_total']){
+							// the file size is too large - stop reading the progress
+							$data['error'] = $this->EE->lang->line('validation_file_too_large');
+						}else{
+							// we need to get the average, total and uploaded in different data types
+
+							$data['average'] = $data['speed_average'];
+							$data['total'] = $data['bytes_total'];
+							$data['uploaded'] = $data['bytes_uploaded'];
+
+							// loop through the data types and fetch their upload values
+							$arrDataTypes = array('kb', 'mb', 'gb', 'tb');
+							foreach($arrDataTypes as $k => $type){
+								// get the previous data type
+								$prevK = isset($arrDataTypes[$k-1]) ? $arrDataTypes[$k-1] : 'bytes';
+
+								// calculate the average speed per second
+								$speedAverage = (isset($data[$prevK . '_average']) ? $data[$prevK . '_average'] : $data['speed_average']) / 1024;
+								if($speedAverage < 100){
+									$speedAverage = round($speedAverage, 1);
+								}elseif($speedAverage < 10){
+									$speedAverage = round($speedAverage, 2);
+								}else{
+									$speedAverage = round($speedAverage);
+								}
+
+								// define the data type average speed, total upload size and uploaded data size
+								$data[$type . '_average'] = $speedAverage;
+								$data[$type . '_total'] = round($data[$prevK . '_total'] / 1024, 2);
+								$data[$type . '_uploaded'] = round($data[$prevK . '_uploaded'] / 1024, 2);
+
+								// if the average is not less than one, we set it to the largest type to use
+								if($data[$type . '_average'] >= 1){
+									$data['average'] = $data[$type . '_average'] . $type;
+								}
+								// if the total is not less than one, we set it to the largest type to use
+								if($data[$type . '_total'] >= 1){
+									$data['total'] = $data[$type . '_total'] . $type;
+								}
+								// if the uploaded amount is not less than one, we set it to the largest type to use
+								if($data[$type . '_uploaded'] >= 1){
+									$data['uploaded'] = $data[$type . '_uploaded'] . $type;
+								}
+							}
+
+							// round up the estimated time to a full second
+							$data['est_sec'] = ceil($data['est_sec']);
 						}
+					}
+
+					// output the result
+					die(json_encode($data));
+				}
+
+
+				// check if we need to display the completion message
+				// determine which post variable to use, depending on the method used
+				switch($this->getFileUploadMethod()){
+					case self::UPLOAD_TYPE_UPLOAD_PROGRESS:
+						$idFieldName = 'UPLOAD_IDENTIFIER';
 					break;
 					case self::UPLOAD_TYPE_ACP:
-						if(function_exists('apc_fetch')){
-							// the APC module is installed
-							if(false === ($tmpData = apc_fetch('upload_' . $upload_id))){
-								// the file wasn't found
-								$data['error'] = $this->EE->lang->line('validation_upload_no_id');
-							}else{
-								// define the $data array
-								$fltTime = time();
-								$fltTimeTaken = ($fltTime > $tmpData['start_time']) ? $fltTime - $tmpData['start_time'] : 0;
-								$data['time_taken'] = $fltTimeTaken;
-								// define the $data array
-								$data['bytes_uploaded'] = $tmpData['current'];																		// the bytes uploaded
-								$data['bytes_total'] = $tmpData['total'];																			// the total file size
-								$data['speed_average'] = ($fltTimeTaken == 0) ? $data['bytes_uploaded'] : $data['bytes_uploaded'] / $fltTimeTaken;	// the average upload speed in bytes
-								$data['est_sec'] = ($data['bytes_total'] - $data['bytes_uploaded']) / $data['speed_average'];						// estimated seconds until complete
-							}
-						}else{
-							// no APC functionality was found
-							$data['error'] = $this->EE->lang->line('validation_upload_not_available');
-						}
+						$idFieldName = 'APC_UPLOAD_PROGRESS';
 					break;
 					case self::UPLOAD_TYPE_SESSION_UPLOAD_PROGRESS:
-						if(ini_get('session.upload_progress.enabled')){
-							// session.upload_progress is enabled, we must be running PHP 5.4+
-							$strKey = ini_get('session.upload_progress.prefix') . ini_get('session.upload_progress.name') . $upload_id;
-
-							if(isset($_SESSION[$strKey]) && is_array($_SESSION[$strKey]) && !empty($_SESSION[$strKey])){
-								$fltTime = time();
-								$fltTimeTaken = ($fltTime > $_SESSION[$strKey]['start_time']) ? $fltTime - $_SESSION[$strKey]['start_time'] : 0;
-								$data['time_taken'] = $fltTimeTaken;
-								// define the $data array
-								$data['bytes_uploaded'] = $_SESSION[$strKey]['bytes_processed'];													// the bytes uploaded
-								$data['bytes_total'] = $_SESSION[$strKey]['content_length'];														// the total file size
-								$data['speed_average'] = ($fltTimeTaken == 0) ? $data['bytes_uploaded'] : $data['bytes_uploaded'] / $fltTimeTaken;	// the average upload speed in bytes
-								$data['est_sec'] = ($data['bytes_total'] - $data['bytes_uploaded']) / $data['speed_average'];						// estimated seconds until complete
-							}
-						}else{
-							// no session.uploadprogress functionality was found
-							$data['error'] = $this->EE->lang->line('validation_upload_not_available');
-						}
-					break;
 					default:
-						// no upload progress functionality was found
-						$data['error'] = $this->EE->lang->line('validation_upload_not_available');
+						$idFieldName = null;
 					break;
 				}
 
-				if(!empty($data) && (!isset($data['error']) || empty($data['error']))){
-					// data has been set
+				if(!is_null($idFieldName) && isset($$idFieldName)){
+					// a specific PHP upload method was used
 
-					if($this->getMaxUploadSize() < $data['bytes_total']){
-						// the file size is too large - stop reading the progress
-						$data['error'] = $this->EE->lang->line('validation_file_too_large');
-					}else{
-						// we need to get the average, total and uploaded in different data types
+					// loop through each file and move it to the temp directory
+					$files = array();
+					foreach($_FILES as $k => $file){
+						move_uploaded_file($file['tmp_name'], $this->getTempFilePath() . $file['name']);
 
-						$data['average'] = $data['speed_average'];
-						$data['total'] = $data['bytes_total'];
-						$data['uploaded'] = $data['bytes_uploaded'];
-
-						// loop through the data types and fetch their upload values
-						$arrDataTypes = array('kb', 'mb', 'gb', 'tb');
-						foreach($arrDataTypes as $k => $type){
-							// get the previous data type
-							$prevK = isset($arrDataTypes[$k-1]) ? $arrDataTypes[$k-1] : 'bytes';
-
-							// calculate the average speed per second
-							$speedAverage = (isset($data[$prevK . '_average']) ? $data[$prevK . '_average'] : $data['speed_average']) / 1024;
-							if($speedAverage < 100){
-								$speedAverage = round($speedAverage, 1);
-							}elseif($speedAverage < 10){
-								$speedAverage = round($speedAverage, 2);
-							}else{
-								$speedAverage = round($speedAverage);
-							}
-
-							// define the data type average speed, total upload size and uploaded data size
-							$data[$type . '_average'] = $speedAverage;
-							$data[$type . '_total'] = round($data[$prevK . '_total'] / 1024, 2);
-							$data[$type . '_uploaded'] = round($data[$prevK . '_uploaded'] / 1024, 2);
-
-							// if the average is not less than one, we set it to the largest type to use
-							if($data[$type . '_average'] >= 1){
-								$data['average'] = $data[$type . '_average'] . $type;
-							}
-							// if the total is not less than one, we set it to the largest type to use
-							if($data[$type . '_total'] >= 1){
-								$data['total'] = $data[$type . '_total'] . $type;
-							}
-							// if the uploaded amount is not less than one, we set it to the largest type to use
-							if($data[$type . '_uploaded'] >= 1){
-								$data['uploaded'] = $data[$type . '_uploaded'] . $type;
-							}
-						}
-
-						// round up the estimated time to a full second
-						$data['est_sec'] = ceil($data['est_sec']);
+						$file['tmp_name'] = $this->getTempFilePath() . $file['name'];
+						$files[$k] = $file;
 					}
+
+					die(json_encode($files));
+				}elseif(is_null($idFieldName)){
+					// no PHP upload method was used - check the $_FILES variable as the form could have been submitted with HTML5
+
 				}
-
-				// output the result
-				die(json_encode($data));
-			}
-
-
-			// check if we need to display the completion message
-			// determine which post variable to use, depending on the method used
-			switch($this->getFileUploadMethod()){
-				case self::UPLOAD_TYPE_UPLOAD_PROGRESS:
-					$idFieldName = 'UPLOAD_IDENTIFIER';
-				break;
-				case self::UPLOAD_TYPE_ACP:
-					$idFieldName = 'APC_UPLOAD_PROGRESS';
-				break;
-				case self::UPLOAD_TYPE_SESSION_UPLOAD_PROGRESS:
-				default:
-					$idFieldName = null;
-				break;
-			}
-
-			if(!is_null($idFieldName) && isset($$idFieldName)){
-				// loop through each file and move it to the temp directory
-				$files = array();
-				foreach($_FILES as $k => $file){
-					move_uploaded_file($file['tmp_name'], $this->getTempFilePath() . $file['name']);
-
-					$file['tmp_name'] = $this->getTempFilePath() . $file['name'];
-					$files[$k] = $file;
-				}
-
-				die(json_encode($files));
 			}
 		}else{
 			$data['error'] = $this->EE->lang->line('validation_invalid_referrer');

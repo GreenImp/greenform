@@ -130,6 +130,7 @@ $lang = array(
 	'form_submit_button_label'					=> 'Submit',
 	// form validation
 	'validation_invalid_referrer'				=> 'The form post is invalid',
+	'validation_no_file_inputs'					=> 'This form doesn\'t accept file inputs',
 	'validation_file_required'					=> 'The %s file upload is missing',
 	'validation_file_no_file_type'				=> 'The %s file upload type could not be found',
 	'validation_file_invalid_file_type'			=> 'The %s file upload type is invalid',

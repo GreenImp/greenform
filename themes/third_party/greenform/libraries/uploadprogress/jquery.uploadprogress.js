@@ -142,7 +142,6 @@ var uploadProgressData = new Array();
 						url:objForm.attr('action'),
 						type:(objForm.attr('method') == 'get') ? 'get' : 'post',
 						xhr:function(){
-							//return $.ajaxSettings.xhr();
 							var myXhr = $.ajaxSettings.xhr();
 							if(myXhr.upload){
 								myXhr.upload.addEventListener('progress', function(evt){
