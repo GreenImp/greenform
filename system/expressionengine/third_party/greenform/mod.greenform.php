@@ -327,7 +327,6 @@ class Greenform{
 					$strRecipientEmailName = $field['field'];
 				}
 			}
-			die(print_r($data));
 			
 			if(!$this->isDebug){
 				// if recipients are set, we send out the form information as an email

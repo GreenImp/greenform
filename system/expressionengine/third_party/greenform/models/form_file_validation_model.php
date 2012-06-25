@@ -798,22 +798,29 @@ class Form_File_Validation_model extends CI_Model{
 					break;
 				}
 
-				if(!is_null($idFieldName) && isset($$idFieldName)){
-					// a specific PHP upload method was used
+				// loop through and create a list of file input names to compare against
+				foreach($fileInputs as $k => $data){
+					$fileInputs[$k] = $data['name'];
+				}
+
+				if(is_null($idFieldName) || isset($$idFieldName)){
+					// either a specific PHP upload method was used or
+					// no PHP upload method was used, but HTML5 might have
+					// - check the $_FILES variable as the form could have been submitted with HTML5
 
 					// loop through each file and move it to the temp directory
 					$files = array();
 					foreach($_FILES as $k => $file){
-						move_uploaded_file($file['tmp_name'], $this->getTempFilePath() . $file['name']);
+						// only move the file if it's field exists
+						if(in_array($k, $fileInputs)){
+							move_uploaded_file($file['tmp_name'], $this->getTempFilePath() . $file['name']);
 
-						$file['tmp_name'] = $this->getTempFilePath() . $file['name'];
-						$files[$k] = $file;
+							$file['tmp_name'] = $this->getTempFilePath() . $file['name'];
+							$files[$k] = $file;
+						}
 					}
 
 					die(json_encode($files));
-				}elseif(is_null($idFieldName)){
-					// no PHP upload method was used - check the $_FILES variable as the form could have been submitted with HTML5
-
 				}
 			}
 		}else{
