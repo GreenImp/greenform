@@ -146,7 +146,7 @@ class Greenform_mcp{
 		// define the variables
 		$view_data = array(
 			'entries' => $this->EE->form->getAllEntries(),	// list of form entries
-			'uploadURL' => $this->EE->config->item('theme_folder_url') . 'third_party/greenform/uploads/',
+			'uploadURL' => $this->EE->form_file_validation->getFileURL(),
 			'formActionURL' => str_replace('&amp;', '&', $this->base_url . AMP . 'method=submission_update')
 		);
 		

@@ -24,7 +24,8 @@ class Form_File_Validation_model extends CI_Model{
 
 	private $fileInputs = array();
 	private $formFiles = array();
-	private $filePath;
+	private $filePath = '';
+	private $fileURL = '';
 
 	private $fileUploadMethod = null;		// the method used for tracking upload progress
 
@@ -109,6 +110,7 @@ class Form_File_Validation_model extends CI_Model{
 
 		// define the file upload path
 		$this->filePath = PATH_THIRD_THEMES . 'greenform/files/';
+		$this->fileURL = $this->EE->config->item('theme_folder_url') . 'third_party/greenform/uploads/';
 
 		// ensure that the upload directory exists and is writable
 		if(!file_exists($this->getFilePath())){
@@ -256,6 +258,10 @@ class Form_File_Validation_model extends CI_Model{
 	 */
 	public function getFilePath(){
 		return $this->filePath;
+	}
+
+	public function getFileURL(){
+		return $this->fileURL;
 	}
 
 	/**
@@ -798,22 +804,29 @@ class Form_File_Validation_model extends CI_Model{
 					break;
 				}
 
-				if(!is_null($idFieldName) && isset($$idFieldName)){
-					// a specific PHP upload method was used
+				// loop through and create a list of file input names to compare against
+				foreach($fileInputs as $k => $data){
+					$fileInputs[$k] = $data['name'];
+				}
+
+				if(is_null($idFieldName) || isset($$idFieldName)){
+					// either a specific PHP upload method was used or
+					// no PHP upload method was used, but HTML5 might have
+					// - check the $_FILES variable as the form could have been submitted with HTML5
 
 					// loop through each file and move it to the temp directory
 					$files = array();
 					foreach($_FILES as $k => $file){
-						move_uploaded_file($file['tmp_name'], $this->getTempFilePath() . $file['name']);
+						// only move the file if it's field exists
+						if(in_array($k, $fileInputs)){
+							move_uploaded_file($file['tmp_name'], $this->getTempFilePath() . $file['name']);
 
-						$file['tmp_name'] = $this->getTempFilePath() . $file['name'];
-						$files[$k] = $file;
+							$file['tmp_name'] = $this->getTempFilePath() . $file['name'];
+							$files[$k] = $file;
+						}
 					}
 
 					die(json_encode($files));
-				}elseif(is_null($idFieldName)){
-					// no PHP upload method was used - check the $_FILES variable as the form could have been submitted with HTML5
-
 				}
 			}
 		}else{

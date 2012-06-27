@@ -107,7 +107,9 @@ $lang = array(
 
 	
 	// notification emails
-	'email_files_attached'						=> 'Files attached.',
+	'email_posts_heading'						=> 'Details',
+	'email_files_heading'						=> 'Files',
+	'email_view_file'							=> 'View File',
 
 	// submissions update
 	'submission_update_success'					=> 'The submission(s) has been updated',

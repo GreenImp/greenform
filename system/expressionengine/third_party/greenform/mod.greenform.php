@@ -327,7 +327,6 @@ class Greenform{
 					$strRecipientEmailName = $field['field'];
 				}
 			}
-			die(print_r($data));
 			
 			if(!$this->isDebug){
 				// if recipients are set, we send out the form information as an email
@@ -428,7 +427,7 @@ class Greenform{
 
 
 		// build the email contents
-		$strBody = $this->getEmailHTML($to, $from, $data, $files);
+		$strBody = $this->getEmailBody($to, $from, $data, $files);
 
 		// set the message body
 		$this->EE->email->message($strBody);
@@ -465,14 +464,18 @@ class Greenform{
 	 * @param array $arrFiles
 	 * @return string
 	 */
-	private function getEmailHTML($strTo, $strFrom, array $arrData, array $arrFiles){
+	private function getEmailBody($strTo, $strFrom, array $arrData, array $arrFiles){
 		$bolIsHTML = (strtolower($this->settings['mailType']) == 'html');
+		$lineBreak = $bolIsHTML ? '<br />' : PHP_EOL;
 
 		$strMessage = '';
 
+		$heading = $this->EE->lang->line('email_posts_heading');
+		$strMessage .=  $lineBreak . ($bolIsHTML ? '<strong>' . $heading . ':</strong>' : $heading . ':') . $lineBreak;
+
 		// loop through all of the post values and build the html for them
 		$strMessage .= $bolIsHTML ? '<ul class="emailPostList">' : '';
-		$strEncapsulate = $bolIsHTML ? '<li><strong>%s:</strong> %s</li>' : '%s: %s' . PHP_EOL;
+		$strEncapsulate = $bolIsHTML ? '<li><strong>%s:</strong> %s</li>' : '%s: %s' . $lineBreak;
 		foreach($arrData as $field){
 			$strPostName = ucwords(strtolower(str_replace('_', ' ', htmlentities(strip_tags(stripslashes($field['label']))))));
 			$strPostVal = htmlentities(strip_tags(stripslashes($field['value'])));
@@ -484,14 +487,20 @@ class Greenform{
 		// check if any files exist
 		if($this->settings['allowFiles'] && (count($arrFiles) > 0)){
 			// files exist
-			$strMessage .= ($bolIsHTML ? '<br />' : PHP_EOL) . $this->EE->lang->line('email_files_attached');
+			$heading = $this->EE->lang->line('email_files_heading');
+			$strMessage .=  $lineBreak . ($bolIsHTML ? '<strong>' . $heading . ':</strong>' : $heading . ':') . $lineBreak;
 
 			// define the path to the file location
-			$filePath = $this->EE->form_file_validation->getFilePath();
-			// loop through and attach the files to the email
+			$filePath = $this->EE->form_file_validation->getFileURL();
+			// define the string to encapsulate the URL
+			$strEncapsulate = $bolIsHTML ? '<li><a href="%s" title="' . $this->EE->lang->line('email_view_file') . '">%s</a></li>' : '%s' . $lineBreak;
+
+			// loop through and add links to the files
+			$strMessage .= $bolIsHTML ? '<ul class="emailFileList">' : '';
 			foreach($arrFiles as $file){
-				$this->EE->email->attach($filePath . $file);
+				$strMessage .= sprintf($strEncapsulate, $filePath . $file, $file);
 			}
+			$strMessage .= $bolIsHTML ? '</ul>' : '';
 		}
 
 
