@@ -472,6 +472,7 @@ class Greenform{
 
 		$strMessage = '';
 
+		// output the details heading
 		$heading = $this->EE->lang->line('email_posts_heading');
 		$strMessage .=  $lineBreak . ($bolIsHTML ? '<strong>' . $heading . ':</strong>' : $heading . ':') . $lineBreak;
 
