@@ -465,7 +465,9 @@ class Greenform{
 	 * @return string
 	 */
 	private function getEmailBody($strTo, $strFrom, array $arrData, array $arrFiles){
+		// define the mail type
 		$bolIsHTML = (strtolower($this->settings['mailType']) == 'html');
+		// define the line break type
 		$lineBreak = $bolIsHTML ? '<br />' : PHP_EOL;
 
 		$strMessage = '';
