@@ -133,6 +133,7 @@ var uploadProgressData = new Array();
 
 				// check if we have formData support
 				o.formData = o.html5 ? new FormData(theForm) || null : null;
+				o.formData = null;
 				if(o.html5 && o.formData){
 					// HTML5 formData is supported
 					var objForm = $(theForm);	// JQuery object of the form

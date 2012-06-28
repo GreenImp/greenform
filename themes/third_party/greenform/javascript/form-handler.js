@@ -281,7 +281,7 @@ if(typeof jQuery != 'undefined'){
 				objForm.uploadProgress(	// define the file upload properties
 					{
 						progressURL:objForm.attr('action'),
-						debugDisplay:'#debugDisplay',	// uncomment for debugging
+						//debugDisplay:'#debugDisplay',	// uncomment for debugging
 						displayFields:['total', 'uploaded', 'average', 'est_time'],
 						targetUploader:'jqUploader',
 						progressDisplay:'.' + strUploadProgressClass,
