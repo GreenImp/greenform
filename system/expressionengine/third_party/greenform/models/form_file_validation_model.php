@@ -781,6 +781,26 @@ class Form_File_Validation_model extends CI_Model{
 
 							// round up the estimated time to a full second
 							$data['est_sec'] = ceil($data['est_sec']);
+							$data['est_time'] = $data['est_sec'] . ' seconds';
+
+							// we need to get the time left in the different denominations (minutes, hours, days etc)
+							$arrTimeTypes = array('minutes', 'hours');
+							foreach($arrTimeTypes as $k => $type){
+								// get the previous data type
+								$prevK = isset($arrTimeTypes[$k-1]) ? $arrTimeTypes[$k-1] : 'sec';
+
+								// calculate the estimated time
+								$data['est_' . $type] = (isset($data['est_' . $prevK]) ? $data['est_' . $prevK] : $data['est_sec']) / 60;
+								// if we are on the first denominator (minutes), round to a full number
+								if($k == 0){
+									$data['est_' . $type] = round($data['est_' . $type]);
+								}
+
+								// if the time is not less than one, we set it to the largest type to use
+								if($data['est_' . $type] >= 1){
+									$data['est_time'] = $data['est_' . $type] + ' ' + $type;
+								}
+							}
 						}
 					}
 

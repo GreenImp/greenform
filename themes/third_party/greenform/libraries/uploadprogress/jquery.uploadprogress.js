@@ -169,11 +169,13 @@ var uploadProgressData = new Array();
 										// this field is a total - set it's 'uploaded' pair to match
 										objProgressHolder.find(o.fieldPrefix + (match[1] ? match[1] + '_' : '') + 'uploaded').html(objProgressHolder.find(o.fieldPrefix + o.displayFields[d]).html());
 									}else if(o.displayFields[d].match(/(.*?_)?average/)){
-										// this field is an average time
+										// this field is an average speed
 										var obj = objProgressHolder.find(o.fieldPrefix + o.displayFields[d]);
 										obj.html(obj.html().replace(/([0-9]+(\.[0-9]+)?)/, '0'));
-									}else if(o.displayFields[d] == 'est_sec'){
-										objProgressHolder.find(o.fieldPrefix + o.displayFields[d]).html('0');
+									}else if(o.displayFields[d].match(/est_(.*?)/)){
+										// this field is an estimated time to completion
+										var obj = objProgressHolder.find(o.fieldPrefix + o.displayFields[d]);
+										obj.html(obj.html().replace(/([0-9]+(\.[0-9]+)?)/, '0'));
 									}
 								}
 							}
@@ -298,18 +300,19 @@ var uploadProgressData = new Array();
 					data.speed_average = (data.time_taken == 0) ? data.bytes_uploaded : data.bytes_uploaded / data.time_taken;	// the average upload speed in bytes
 					data.est_sec = (event.total - event.loaded) / data.speed_average;											// estimated seconds until complete
 
-					// we need to get the average, total and uploaded in different denominations types
+					// store the default average speed, total to upload and total uploaded
 					data.average = data.speed_average;
 					data.total = data.bytes_total;
 					data.uploaded = data.bytes_uploaded;
 
+					// we need to get the average, total and uploaded in different denominations types
 					var arrDataTypes = ['kb', 'mb', 'gb', 'tb'];
 					for(var i = 0; i < arrDataTypes.length; i++){
 						// get the previous data type
 						var prevT = arrDataTypes[i-1] || 'bytes',
 							currentT = arrDataTypes[i];
 
-						// calculate the average speed per second
+						// calculate the average speed
 						data[currentT + '_average'] = (data[prevT + '_average'] ? data[prevT + '_average'] : data['speed_average']) / 1024;
 						if(data[currentT + '_average'] < 100){
 							data[currentT + '_average'] = data[currentT + '_average'].toFixed(1).replace(/\.0$/, '');
@@ -338,7 +341,28 @@ var uploadProgressData = new Array();
 					}
 
 					// round up the estimated time to a full second
-					data['est_sec'] = Math.ceil(data['est_sec']);
+					data.est_sec = Math.ceil(data['est_sec']);
+					data.est_time = data.est_sec + ' seconds';
+
+					// we need to get the time left in the different denominations (minutes, hours, days etc)
+					var arrTimeTypes = ['minutes', 'hours'];
+					for(i = 0; i < arrTimeTypes.length; i++){
+						// get the previous time type
+						prevT = arrTimeTypes[i-1] || 'sec';
+						currentT = arrTimeTypes[i];
+
+						// calculate the estimated time
+						data['est_' + currentT] = ((data['est_' + prevT] ? data['est_' + prevT] : data['est_sec']) / 60).toFixed(2).replace(/\.00$/, '');
+						// if we are on the first denominator (minutes), round to a full number
+						if(i == 0){
+							data['est_' + currentT] = Math.round(data['est_' + currentT]);
+						}
+
+						// if the time is not less than one, we set it to the largest type to use
+						if(data['est_' + currentT] >= 1){
+							data['est_time'] = data['est_' + currentT] + ' ' + currentT;
+						}
+					}
 
 					uploadProgressData[id] = data;
 					displayProgress(id);

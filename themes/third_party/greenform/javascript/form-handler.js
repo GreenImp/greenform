@@ -270,7 +270,7 @@ if(typeof jQuery != 'undefined'){
 								'<div class="data">' +
 									'<span class="uploaded">0</span> of <span class="total">0</span> - <span class="average">0</span>/sec' +
 								'</div>' +
-								'<span class="est_sec">0</span> seconds remaining' +
+								'<span class="est_time">0</span> remaining' +
 							'</div>' +
 							'<div class="barHolder">' +
 								'<div class="progressBar"></div>' +
@@ -282,7 +282,7 @@ if(typeof jQuery != 'undefined'){
 					{
 						progressURL:objForm.attr('action'),
 						debugDisplay:'#debugDisplay',	// uncomment for debugging
-						displayFields:['total', 'uploaded', 'average', 'est_sec'],
+						displayFields:['total', 'uploaded', 'average', 'est_time'],
 						targetUploader:'jqUploader',
 						progressDisplay:'.' + strUploadProgressClass,
 						progressMeter:'.progressBar',
