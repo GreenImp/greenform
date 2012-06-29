@@ -132,11 +132,11 @@ var uploadProgressData = new Array();
 				}
 
 				// check if we have formData support
-				o.formData = o.html5 ? new FormData(theForm) || null : null;
-				o.formData = null;
+				o.formData = (o.html5 && (window.FormData !== undefined)) ? new FormData(theForm) || null : null;
 				if(o.html5 && o.formData){
 					// HTML5 formData is supported
 					var objForm = $(theForm);	// JQuery object of the form
+					uploadProgressNotFound[o.id] = 0;
 
 					// submit the form via Ajax
 					var xhr = $.ajax({
@@ -146,9 +146,15 @@ var uploadProgressData = new Array();
 							var myXhr = $.ajaxSettings.xhr();
 							if(myXhr.upload){
 								myXhr.upload.addEventListener('progress', function(evt){
-									$.uploadProgressUpdate(o.id, evt);
+									if(uploadProgressNotFound[o.id] >= o.notFoundLimit){
+										xhr.abort();
+										return false;
+									}else{
+										$.uploadProgressUpdate(o.id, evt);
+									}
 								}, false);
 							}
+
 							return myXhr;
 						},
 						data:o.formData,
@@ -197,7 +203,7 @@ var uploadProgressData = new Array();
 								$(o.debugDisplay).append('<p>XHR: '+error+'</p>');
 							}
 							o.failed.call(this, {error:'XHR: ' + error});
-							uploadProgressActive[id] = false;
+							uploadProgressActive[o.id] = false;
 						}
 					});
 
@@ -288,8 +294,22 @@ var uploadProgressData = new Array();
 
 	$.extend({
 		uploadProgressUpdate:function(id, event){
-			if((typeof XMLHttpProgressEvent != 'undefined') && (event instanceof XMLHttpProgressEvent)){
+			if(
+				(typeof event != 'undefined') &&
+				(
+					((typeof XMLHttpProgressEvent != 'undefined') && (event instanceof XMLHttpProgressEvent)) ||				// firefox
+					((typeof XMLHttpRequestProgressEvent != 'undefined') && (event instanceof XMLHttpRequestProgressEvent)) ||	// chrome
+					((typeof ProgressEvent != 'undefined') && (event instanceof ProgressEvent))									// opera
+				)
+			){
 				// the event is set as the XHR progress handler
+
+				// check that we haven't exceeded the error limit
+				if(uploadProgressNotFound[id] >= uploadProgressSettings[id].notFoundLimit){
+					return false;
+				}
+
+				// check that het length is computable
 				if(event.lengthComputable){
 					var startTime = uploadProgressSettings[id].startTime,
 						currTime = (new Date().getTime()) / 1000,
@@ -395,8 +415,9 @@ var uploadProgressData = new Array();
 
 							displayProgress(id);
 						}
-						if (uploadProgressActive[id])
+						if (uploadProgressActive[id]){
 							uploadProgressTimer[id] = window.setTimeout("$.uploadProgressUpdate('"+id+"')",o.updateDelay);
+						}
 					},
 					dataType:o.dataFormat,
 					error:function(xhr, err, et) {
